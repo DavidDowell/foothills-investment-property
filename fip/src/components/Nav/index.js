@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <nav>
-      <header className="text-4xl my-8 ml-8 text-start">
+      <header className="text-4xl mt-8 mb-2 ml-8 text-start">
         Foothills Investment Property
       </header>
       <div className="flex flex-row justify-between">
