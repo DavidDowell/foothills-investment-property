@@ -25,3 +25,7 @@ code {
 .nav-items {
   width: 60%;
 }
+
+.nav-link {
+  width: 25%;
+}
