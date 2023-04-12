@@ -47,6 +47,7 @@ code {
   width: 35%;
   height: 80vh;
   padding: 10% 0;
+  margin-bottom: 2px;
 }
 
 .main-company-name {
@@ -92,5 +93,13 @@ code {
   background-color: white;
   border-radius: 8px;
   padding: 4px;
+  color: #021569;
+}
+
+.submit {
+  color: #021569;
+}
+
+.textbox {
   color: #021569;
 }
