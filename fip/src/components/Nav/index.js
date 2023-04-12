@@ -4,23 +4,20 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <nav>
-      <header className="text-4xl mt-8 mb-2 ml-8 text-start">
-        Foothills Investment Property
-      </header>
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between m-8">
         <div id="logo"></div>
-        <ul className="nav-items flex justify-between items-center text-2xl px-8">
-          <li>
-            <Link to="/">Home</Link>
+        <ul className="nav-items flex justify-between items-center font-bold text-4xl px-8 mr-10">
+          <li className="nav-link">
+            <Link to="#">HOME</Link>
           </li>
-          <li>
-            <Link to="/mortgagerelief">Mortgage Relief</Link>
+          <li className="nav-link">
+            <Link to="#mortgagerelief">MORTGAGE RELIEF</Link>
           </li>
-          <li>
-            <Link to="/agents">Agents</Link>
+          <li className="nav-link">
+            <Link to="#team">TEAM</Link>
           </li>
-          <li>
-            <Link to="/contact">Contact Us</Link>
+          <li className="nav-link">
+            <Link to="#contact">CONTACT</Link>
           </li>
         </ul>
       </div>

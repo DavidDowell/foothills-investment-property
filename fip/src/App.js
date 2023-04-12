@@ -1,7 +1,8 @@
 import './App.css';
 import './components/Nav';
 import Nav from './components/Nav';
-import Home from './components/Home';
+import Main from './components/Main';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -11,8 +12,8 @@ function App() {
         <div className="App">
           <div>
             <Nav />
-            <Home />
-            <h1>Welcome to our Real Estate Company!</h1>
+            <Main />
+            <Footer />
           </div>
         </div>
       </Router>
