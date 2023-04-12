@@ -98,6 +98,7 @@ code {
 
 .submit {
   color: #021569;
+  cursor: pointer;
 }
 
 .textbox {
