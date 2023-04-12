@@ -2,15 +2,15 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <Footer>
+    <main id='footer' className='flex justify-between'>
       <section>
         <h1>NOBLE OAK SOLUTIONS</h1>
-        <h2>555-555-5555</h2>
+        <h2 className='flex justify-start'>828-838-1274</h2>
       </section>
       <section>
-        <button className="footer-button">Address</button>
+        <button className="footer-button">365 Main Ave SW Hickory, NC 28602</button>
       </section>
-    </Footer>
+    </main>
   );
 };
 
