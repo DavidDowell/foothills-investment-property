@@ -4,6 +4,8 @@ import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import MortgageRelief from './components/MortgageRelief';
+import Team from './components/Team';
+import Contact from './components/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useRef, useEffect } from 'react';
 
@@ -41,6 +43,8 @@ function App() {
               <Main />
             </div>
             <MortgageRelief />
+            <Team />
+            <Contact />
             <Footer />
           </div>
         </div>
