@@ -33,6 +33,7 @@ code {
 .nav-items {
   width: 100%;
   font-family: "Righteous", sans-serif;
+  cursor: pointer;
 }
 
 .nav-link {
@@ -101,4 +102,8 @@ code {
 
 .textbox {
   color: #021569;
+}
+
+.mission {
+  font-family: "Righteous", sans-serif;
 }

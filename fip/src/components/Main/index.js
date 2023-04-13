@@ -80,7 +80,7 @@ const Main = () => {
   };
 
   return (
-    <div className="flex">
+    <div id="Main" className="flex">
       <section className="main-left flex flex-col">
         <div className="main-company-name mb-12">
           <h1 className="font-bold text-6xl mb-4">NOBLE OAK</h1>

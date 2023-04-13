@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, animateScroll } from 'react-scroll';
 import logo from '../../assets/images/logo/WhiteOak.png'
 
 const Nav = () => {
@@ -11,16 +11,16 @@ const Nav = () => {
         </div>
         <ul className="nav-items flex justify-between items-center font-bold text-4xl px-8 mr-10">
           <li className="nav-link hover:text-emerald-200">
-            <Link to="#">HOME</Link>
+            <Link to="Main" smooth={true} duration={2000}>HOME</Link>
           </li>
           <li className="nav-link hover:text-emerald-200">
-            <Link to="#mortgagerelief">MORTGAGE RELIEF</Link>
+            <Link to="MortgageRelief" smooth={true} duration={2000}>MORTGAGE RELIEF</Link>
           </li>
           <li className="nav-link hover:text-emerald-200">
-            <Link to="#team">TEAM</Link>
+            <Link to="Team" smooth={true} duration={2000}>TEAM</Link>
           </li>
           <li className="nav-link hover:text-emerald-200">
-            <Link to="#contact">CONTACT</Link>
+            <Link to="Contact" smooth={true} duration={2000}>CONTACT</Link>
           </li>
         </ul>
       </div>
