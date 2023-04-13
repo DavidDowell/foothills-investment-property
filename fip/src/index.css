@@ -13,7 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(./assets/images/other/layered-waves-haikei\ \(1\).svg);
+  background: url(./assets/images/other/layered-waves-green.svg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -30,12 +30,6 @@ code {
   width: 150px;
 }
 
-#logo-2 {
-  background-image: url("./assets/images/logo/WhiteOak200.png");
-  height: 200px;
-  width: 252px;
-}
-
 .nav-items {
   width: 100%;
   font-family: "Righteous", sans-serif;
@@ -43,10 +37,6 @@ code {
 
 .nav-link {
   width: 25%;
-}
-
-.nav-link:hover {
-  color: gold;
 }
 
 .main-left {
@@ -106,6 +96,7 @@ code {
 .submit {
   color: #021569;
   cursor: pointer;
+  font-family: "Righteous", sans-serif;
 }
 
 .textbox {

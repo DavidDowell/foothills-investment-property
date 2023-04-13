@@ -90,7 +90,7 @@ const Main = () => {
           {!showForm ? (
             <button
               onClick={handleButtonClick}
-              className=" bg-yellow-300 text-xl p-5 rounded submit hover:bg-inherit hover:text-white hover:text-3xl mt-3"
+              className=" bg-emerald-200 text-xl p-5 rounded submit hover:animate-pulse mt-3"
               style={{ width: '300px' }}
             >
               Click Here for Relief
