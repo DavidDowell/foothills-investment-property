@@ -3,7 +3,7 @@ import React from "react";
 const MortgageRelief = () => {
   return (
     <div id="MortgageRelief" className="grid grid-cols-3">
-      <h1 className="mission text-2xl col-span-2 col-start-2 m-10">
+      <h1 className="mission text-2xl col-span-2 col-start-2 m-20">
         Our mission at Noble Oak Solutions is to empower individuals and
         families to achieve financial freedom through real estate investing. We
         strive to creatively assist our customers in achieving their goals,
