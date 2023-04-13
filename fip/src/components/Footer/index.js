@@ -8,7 +8,7 @@ const Footer = () => {
         <h2 className='flex justify-start'>828-838-1274</h2>
       </section>
       <section>
-        <button className="footer-button">365 Main Ave SW Hickory, NC 28602</button>
+        <button className="footer-button text-3xl">365 Main Ave SW Hickory, NC 28602</button>
       </section>
     </main>
   );

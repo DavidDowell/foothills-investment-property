@@ -21,18 +21,24 @@ const Main = () => {
       Swal.fire({
         icon: 'warning',
         title: 'Please Provide Your Name!',
+        allowOutsideClick: true,
+        allowEnterKey: true,
       });
       console.log('Must have a Name!');
     } else if (!validateAddress(address)) {
       Swal.fire({
         icon: 'warning',
         title: 'Please Provide A Valid Address!',
+        allowOutsideClick: true,
+        allowEnterKey: true,
       });
       console.log('Must have an Address!');
     } else if (!userMessage) {
       Swal.fire({
         icon: 'warning',
         title: 'Please Tell Us What We Can Help You With!',
+        allowOutsideClick: true,
+        allowEnterKey: true,
       });
       console.log('Must have a message!');
     } else {
@@ -84,10 +90,10 @@ const Main = () => {
           {!showForm ? (
             <button
               onClick={handleButtonClick}
-              className="bg-blue-300 p-5 rounded submit hover:bg-inherit hover:text-white hover:text-2xl mt-24"
+              className=" bg-yellow-300 text-xl p-5 rounded submit hover:bg-inherit hover:text-white hover:text-3xl mt-3"
               style={{ width: '300px' }}
             >
-              Show Form
+              Click Here for Relief
             </button>
           ) : (
             <form className="cf" ref={form} onSubmit={checkInfo}>

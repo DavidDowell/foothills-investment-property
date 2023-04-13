@@ -13,7 +13,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary);
+  background: url(./assets/images/other/layered-waves-haikei\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
 }
 
@@ -29,9 +31,9 @@ code {
 }
 
 #logo-2 {
-  background-image: url("./assets/images/logo/NobleOak200px.png");
+  background-image: url("./assets/images/logo/WhiteOak200.png");
   height: 200px;
-  width: 200px;
+  width: 252px;
 }
 
 .nav-items {
