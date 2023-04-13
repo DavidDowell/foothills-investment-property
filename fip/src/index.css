@@ -43,11 +43,16 @@ code {
   width: 25%;
 }
 
+.nav-link:hover {
+  color: gold;
+}
+
 .main-left {
   width: 35%;
   height: 80vh;
   padding: 10% 0;
   margin-bottom: 2px;
+  /* color: gold; */
 }
 
 .main-company-name {
