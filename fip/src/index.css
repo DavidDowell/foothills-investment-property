@@ -109,6 +109,45 @@ code {
   font-family: "Righteous", sans-serif;
 }
 
+.team {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    margin: 20px;
+    background: var(--secondary);
+    color: var(--primary);
+    flex: 1;
+    min-width: 400px;
+}
+
+.team-member img {
+    width: 100%;
+}
+
+.member-bio {
+    padding: 25px;
+    line-height: 1.3;
+}
+
+.member-bio h3 {
+    font-size: 28px;
+}
+
+.member-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.member-bio p {
+    font-size: 17px;
+}
+
 #Contact {
   background-color: var(--primary);
   height: 50vh;
