@@ -245,5 +245,5 @@ code {
 }
 
 .contact-info a {
-    color: var(--primary-color);
+    color: var(--secondary);
 }

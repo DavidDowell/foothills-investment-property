@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useRef, useEffect } from 'react';
 
 function App() {
-
   const refs = [useRef(null), useRef(null), useRef(null), useRef(null)];
 
   useEffect(() => {
@@ -22,7 +21,7 @@ function App() {
           const distance = rect.top;
 
           if (distance < window.innerHeight * 0.5) {
-            element.style.opacity = 1.2 + (distance / (window.innerHeight * 0.5));
+            element.style.opacity = 1.2 + distance / (window.innerHeight * 0.5);
           } else {
             element.style.opacity = 1;
           }
@@ -40,7 +39,7 @@ function App() {
       });
     };
   }, []);
-  
+
   return (
     <main>
       <Router>
@@ -53,9 +52,9 @@ function App() {
             <div ref={refs[1]}>
               <MortgageRelief />
             </div>
-            <div ref={refs[2]}>
-              <Team />
-            </div>
+            {/* <div ref={refs[2]}> */}
+            <Team />
+            {/* </div> */}
             <div ref={refs[3]}>
               <Contact />
             </div>
