@@ -4,6 +4,7 @@
 
 :root {
   --primary: #0c1850;
+  --secondary: #a7f3d0;
 }
 
 body {
@@ -108,16 +109,40 @@ code {
   font-family: "Righteous", sans-serif;
 }
 
-.contact {
-    background: var(--secondary-color);
+#Contact {
+  background-color: var(--primary);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact h2 {
-    color: var(--primary-color);
+.contact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.contact-map {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.contact-map iframe {
+  width: 75%;
+  height: 80%;
 }
 
 .contact-info {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -127,32 +152,24 @@ code {
     margin: 15px;
 }
 
-.contact-info iframe {
-    height: 400px;
-}
-
-.contact-info div {
-    color: white;
-}
-
 .contact-info h3 {
-    color: var(--primary-color);
-    font-size: 32px;
+    color: var(--secondary);
+    font-size: 42px;
 }
 
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
 }
 
 .contact-form input, .contact-form textarea {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--secondary);
     display: block;
     padding: 7px 15px;
-    font-size: 16px;
-    color: var(--secondary-color);
+    font-size: 22px;
+    color: var(--primary);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -160,8 +177,16 @@ code {
     background-color: rgba(255, 255, 255, 0.75);
 }
 
+.contact-form textarea {
+  font-size: 18px;
+}
+
 .contact-form input:focus, .contact-form textarea:focus {
     background-color: rgba(255, 255, 255, 1);
+}
+
+.contact-form input:not(:placeholder-shown):valid, .contact-form textarea:not(:placeholder-shown):valid {
+    background-color:#e8f0fe;
 }
 
 .contact-form button {
@@ -170,20 +195,16 @@ code {
     color: var(--primary);
     text-align: center;
     padding: 15px 0;
-    font-size: 16px;
+    font-size: 24px;
+    font-weight: bold;
     border-radius: 10px;
 }
 
 .contact-form button:hover {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
+    color: var(--secondary);
+    background: rgba(167,243,208, 0.5);
 }
 
 .contact-info a {
     color: var(--primary-color);
-}
-
-#bullets {
-  height: 30vh;
-  width: 50vh;
 }
