@@ -10,40 +10,55 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useRef, useEffect } from 'react';
 
 function App() {
-  const ref = useRef(null);
+
+  const refs = [useRef(null), useRef(null), useRef(null), useRef(null)];
 
   useEffect(() => {
-    function handleScroll() {
-      const element = ref.current;
-      const rect = element.getBoundingClientRect();
-      const distance = rect.top;
+    function handleScroll(index) {
+      return () => {
+        const element = refs[index].current;
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          const distance = rect.top;
 
-      if (distance < window.innerHeight * 0.5) {
-        element.style.opacity = 1 + distance / (window.innerHeight * 0.5);
-      } else {
-        element.style.opacity = 1;
-      }
+          if (distance < window.innerHeight * 0.5) {
+            element.style.opacity = 1.2 + (distance / (window.innerHeight * 0.5));
+          } else {
+            element.style.opacity = 1;
+          }
+        }
+      };
     }
 
-    window.addEventListener('scroll', handleScroll);
+    refs.forEach((ref, index) => {
+      window.addEventListener('scroll', handleScroll(index));
+    });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      refs.forEach((ref, index) => {
+        window.removeEventListener('scroll', handleScroll(index));
+      });
     };
   }, []);
-
+  
   return (
     <main>
       <Router>
         <div className="App">
           <div>
             <Nav />
-            <div ref={ref}>
+            <div ref={refs[0]}>
               <Main />
             </div>
-            <MortgageRelief />
-            <Team />
-            <Contact />
+            <div ref={refs[1]}>
+              <MortgageRelief />
+            </div>
+            <div ref={refs[2]}>
+              <Team />
+            </div>
+            <div ref={refs[3]}>
+              <Contact />
+            </div>
             <Footer />
           </div>
         </div>
