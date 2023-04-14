@@ -4,7 +4,7 @@ import { Link, animateScroll } from 'react-scroll';
 const Team = () => {
   return (
     <section>
-      <div>Hello Team</div>
+      <div></div>
     </section>
   );
 };

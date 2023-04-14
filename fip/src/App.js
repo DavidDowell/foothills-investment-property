@@ -19,7 +19,7 @@ function App() {
       const distance = rect.top;
 
       if (distance < window.innerHeight * 0.5) {
-        element.style.opacity = 1 - (distance / (window.innerHeight * 0.5));
+        element.style.opacity = 1 + distance / (window.innerHeight * 0.5);
       } else {
         element.style.opacity = 1;
       }
@@ -32,7 +32,6 @@ function App() {
     };
   }, []);
 
-  
   return (
     <main>
       <Router>
