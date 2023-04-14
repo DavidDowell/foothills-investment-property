@@ -6,7 +6,7 @@ const MortgageRelief = () => {
     <div id="MortgageRelief" className="md:grid grid-cols-3 flex flex-col">
       <img src={bullets} id="bullets" alt="bullets" className="hidden md:block ml-5 mt-20"/>
       <img src={bullets2} id="bullets2" alt="bullets2" className="md:hidden ml-5 mt-20"/>
-      <h1 className="mission text-2xl col-span-2 col-start-2 m-20">
+      <h1 className="mission text-2xl text-left col-span-2 col-start-2 m-20">
         Our mission at Noble Oak Solutions is to empower individuals and
         families to achieve financial freedom through real estate investing. We
         strive to creatively assist our customers in achieving their goals,
