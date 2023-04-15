@@ -106,6 +106,7 @@ code {
 
 .team-header {
   font-size: 80px;
+  margin-bottom: 40px;
 }
 
 .team {
@@ -123,6 +124,17 @@ code {
     flex: 1;
     min-width: 400px;
     max-width: 500px;
+    border: 24px solid var(--secondary);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease-in-out;
+    /* Should I keep what's below? */
+    box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF; 
+    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
+}
+
+.team-member:hover {
+  /* box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF; */
 }
 
 .team-member img {
@@ -135,7 +147,7 @@ code {
 }
 
 .member-bio h3 {
-    font-size: 28px;
+    font-size: 36px;
 }
 
 .member-bio h4 {

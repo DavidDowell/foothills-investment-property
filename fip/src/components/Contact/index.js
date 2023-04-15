@@ -48,7 +48,7 @@ const Contact = () => {
       emailjs
         .sendForm(
           process.env.REACT_APP_SERVICE_ID,
-          process.env.REACT_APP_TEMPLATE_ID,
+          process.env.REACT_APP_TEMPLATE_ID_CONTACT,
           form.current,
           process.env.REACT_APP_PUBLIC_KEY
         )
@@ -109,6 +109,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="contact-name-first"
+                    name="contact-name-first"
                     placeholder="First Name"
                     className="mr-2"
                   />
@@ -117,6 +118,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="contact-name-last"
+                    name="contact-name-last"
                     placeholder="Last Name"
                     className="ml-2"
                   />
@@ -129,6 +131,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="contact-phone"
+                    name="contact-phone"
                     placeholder="Your Number"
                     className="mr-2"
                   />
@@ -138,6 +141,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="contact-email"
+                    name="contact-email"
                     placeholder="Your Email"
                     className="ml-2"
                   />
@@ -145,7 +149,11 @@ const Contact = () => {
               </div>
 
               <label for="contact-message">Message</label>
-              <textarea id="contact-message" placeholder="Message"></textarea>
+              <textarea
+                id="contact-message"
+                name="contact-message"
+                placeholder="Message"
+              ></textarea>
 
               <button className="bg-emerald-200">Submit</button>
             </form>

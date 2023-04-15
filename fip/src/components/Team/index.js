@@ -6,7 +6,7 @@ import trainer3 from '../../assets/images/other/trainer-3.jpg';
 
 const Team = () => {
   return (
-    <section id="Team">
+    <section id="Team" className="mx-20">
       <div className="team-header">Meet The Team</div>
       <div className="team grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         <article class="team-member">
