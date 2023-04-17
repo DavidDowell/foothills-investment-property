@@ -1,12 +1,17 @@
 import React from "react";
-import bullets from "../../assets/images/other/fip-points.png";
-import bullets2 from "../../assets/images/other/fip-points-2.png"
+// import bullets from "../../assets/images/other/fip-points.png";
+// import bullets2 from "../../assets/images/other/fip-points-2.png"
+// import handshake from "../../assets/images/other/handshake2.png"
+// import handshakesvg from "../../assets/images/other/handshakesvg.svg"
+
+import handshakesvg2 from "../../assets/images/other/handshakesvg2.svg"
 const MortgageRelief = () => {
   return (
-    <div id="MortgageRelief" className="md:grid grid-cols-3 flex flex-col">
-      <img src={bullets} id="bullets" alt="bullets" className="hidden md:block ml-5 mt-20"/>
-      <img src={bullets2} id="bullets2" alt="bullets2" className="md:hidden ml-5 mt-20"/>
-      <h1 className="mission text-2xl text-left col-span-2 col-start-2 m-20">
+    <div id="MortgageRelief" className="lg:grid grid-rows-4 grid-flow-col gap-4 flex flex-col">
+      {/* <img src={bullets} id="bullets" alt="bullets" className="hidden md:block ml-5 mt-20"/>
+      <img src={bullets2} id="bullets2" alt="bullets2" className="md:hidden ml-5 mt-20"/> */}
+      <img src={handshakesvg2} id="handshake" alt="handshake" className="row-start-2 row-span-2"/>
+      <h1 className="mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20">
         Our mission at Noble Oak Solutions is to empower individuals and
         families to achieve financial freedom through real estate investing. We
         strive to creatively assist our customers in achieving their goals,

@@ -49,13 +49,13 @@ function App() {
             <div ref={refs[0]}>
               <Main />
             </div>
-            <div ref={refs[1]}>
+            <div>
               <MortgageRelief />
             </div>
             {/* <div ref={refs[2]}> */}
             <Team />
             {/* </div> */}
-            <div ref={refs[3]}>
+            <div>
               <Contact />
             </div>
             <Footer />
