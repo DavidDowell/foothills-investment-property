@@ -63,6 +63,57 @@ code {
   width: 50%;
 }
 
+.relief-form-name {
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+}
+
+.relief-form-phone {
+  width: 30%;
+  height: 50px;
+  font-size: 20px;
+}
+
+.relief-form-email {
+  width: 70%;
+  height: 50px;
+  font-size: 20px;
+}
+
+.relief-form-address {
+  width: 70%;
+  height: 50px;
+  font-size: 20px;
+}
+
+.relief-form-zip {
+  width: 30%;
+  height: 50px;
+  font-size: 20px;
+}
+
+.relief-form-message {
+  width: 97%;
+  height: 80px;
+  font-size: 20px;
+}
+
+.relief-form-submit {
+  width: 95%;
+  color: var(--primary);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.relief-form-submit:hover {
+    color: var(--secondary);
+    background: rgba(167,243,208, 0.5);
+}
+
 .main-right {
   width: 65%;
   height: 80vh;
