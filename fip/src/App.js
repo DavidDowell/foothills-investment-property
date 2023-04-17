@@ -14,18 +14,23 @@ function App() {
 
   useEffect(() => {
     function handleScroll(index) {
+      let timeoutId;
       return () => {
-        const element = refs[index].current;
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          const distance = rect.top;
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          const element = refs[index].current;
+          if (element) {
+            const rect = element.getBoundingClientRect();
+            const distance = rect.top;
 
-          if (distance < window.innerHeight * 0.5) {
-            element.style.opacity = 1.2 + distance / (window.innerHeight * 0.5);
-          } else {
-            element.style.opacity = 1;
+            if (distance < window.innerHeight * 0.5) {
+              element.style.opacity =
+                1.2 + distance / (window.innerHeight * 0.5);
+            } else {
+              element.style.opacity = 1;
+            }
           }
-        }
+        }, 100); // Delay in milliseconds, adjust as needed
       };
     }
 
@@ -52,9 +57,9 @@ function App() {
             <div ref={refs[1]}>
               <MortgageRelief />
             </div>
-            {/* <div ref={refs[2]}> */}
-            <Team />
-            {/* </div> */}
+            <div ref={refs[2]}>
+              <Team />
+            </div>
             <div ref={refs[3]}>
               <Contact />
             </div>

@@ -17,9 +17,7 @@ const Main = () => {
     let userNameFirst = document.getElementById('user_name_first').value;
     let userNameLast = document.getElementById('user_name_last').value;
     let userPhone = document.getElementById('user_phone_number').value;
-    let userEmail = document.getElementById('user_email').value;
     let address = document.getElementById('user_address').value;
-    let zipCode = document.getElementById('user_zip').value;
     let userMessage = document.getElementById('user_message').value;
     if (!userNameFirst && !userNameLast) {
       Swal.fire({
@@ -29,23 +27,22 @@ const Main = () => {
         allowEnterKey: true,
       });
       console.log('Must have a Name!');
-    } else if (!validateAddress(address) && !zipCode) {
+    } else if (!validateAddress(address)) {
       Swal.fire({
         icon: 'warning',
-        title: 'Please Provide A Valid Address With A Zip Code!',
+        title: 'Please Provide A Valid Address!',
         allowOutsideClick: true,
         allowEnterKey: true,
       });
       console.log('Must have an Address!');
-    } else if (!userPhone || !userEmail) {
+    } else if (!userPhone) {
       Swal.fire({
         icon: 'warning',
-        title:
-          'Please Provide A Phone Number Or An Email So We Can Contact You Back',
+        title: 'Please Provide A Phone Number So We Can Contact You Back',
         allowOutsideClick: true,
         allowEnterKey: true,
       });
-      console.log('Must have contact phone!');
+      console.log('Must have phone number!');
     } else if (!userMessage) {
       Swal.fire({
         icon: 'warning',
@@ -73,9 +70,7 @@ const Main = () => {
             document.getElementById('user_name_first').value = '';
             document.getElementById('user_name_last').value = '';
             document.getElementById('user_phone_number').value = '';
-            document.getElementById('user_email').value = '';
             document.getElementById('user_address').value = '';
-            document.getElementById('user_zip').value = '';
             document.getElementById('user_message').value = '';
 
             setShowForm(false);
@@ -138,28 +133,14 @@ const Main = () => {
                   id="user_phone_number"
                   className="pt-1 mx-2 relief-form-phone text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
                 />
-                <input
-                  name="user_email"
-                  type="text"
-                  placeholder="Email"
-                  id="user_email"
-                  className="pt-1 mx-2 relief-form-email text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
-                />
               </div>
-              <div className="m-2 flex">
+              <div className="m-2">
                 <input
                   type="text"
                   placeholder="Address"
                   name="user_address"
                   id="user_address"
                   className="relief-form-address mx-2 text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
-                />
-                <input
-                  type="text"
-                  placeholder="Zip Code"
-                  name="user_zip"
-                  id="user_zip"
-                  className="relief-form-zip mx-2 text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
                 />
               </div>
               <div className="m-2">

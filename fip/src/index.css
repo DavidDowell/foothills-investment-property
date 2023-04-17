@@ -70,25 +70,13 @@ code {
 }
 
 .relief-form-phone {
-  width: 30%;
-  height: 50px;
-  font-size: 20px;
-}
-
-.relief-form-email {
-  width: 70%;
+  width: 100%;
   height: 50px;
   font-size: 20px;
 }
 
 .relief-form-address {
-  width: 70%;
-  height: 50px;
-  font-size: 20px;
-}
-
-.relief-form-zip {
-  width: 30%;
+  width: 97%;
   height: 50px;
   font-size: 20px;
 }
@@ -179,13 +167,13 @@ code {
     border-radius: 12px;
     transition: box-shadow 0.3s ease-in-out;
     /* Should I keep what's below? */
-    box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF; 
-    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
+    /* box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF; 
+    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF; */
 }
 
 .team-member:hover {
-  /* box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
-  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF; */
+  box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
 }
 
 .team-member img {
