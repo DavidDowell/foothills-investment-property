@@ -13,35 +13,29 @@ function App() {
   const refs = [useRef(null), useRef(null), useRef(null), useRef(null)];
 
   useEffect(() => {
-    function handleScroll(index) {
-      let timeoutId;
-      return () => {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-          const element = refs[index].current;
-          if (element) {
-            const rect = element.getBoundingClientRect();
-            const distance = rect.top;
+    function handleScroll() {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const maxOpacity = 1;
+      const minOpacity = 0; // Set to 0 to start fading out from the top
 
-            if (distance < window.innerHeight * 0.5) {
-              element.style.opacity =
-                1.2 + distance / (window.innerHeight * 0.5);
-            } else {
-              element.style.opacity = 1;
-            }
-          }
-        }, 100); // Delay in milliseconds, adjust as needed
-      };
+      refs.forEach(ref => {
+        if (ref.current) {
+          const elementTop = ref.current.offsetTop;
+          const elementHeight = ref.current.offsetHeight;
+          const opacity = Math.max(
+            minOpacity,
+            maxOpacity - (scrollTop - elementTop) / (elementHeight * 0.5)
+          );
+          ref.current.style.opacity = opacity;
+        }
+      });
     }
 
-    refs.forEach((ref, index) => {
-      window.addEventListener('scroll', handleScroll(index));
-    });
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      refs.forEach((ref, index) => {
-        window.removeEventListener('scroll', handleScroll(index));
-      });
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -49,22 +43,20 @@ function App() {
     <main>
       <Router>
         <div className="App">
-          <div>
-            <Nav />
-            <div ref={refs[0]}>
-              <Main />
-            </div>
-            <div>
-              <MortgageRelief />
-            </div>
-            <div ref={refs[2]}>
-              <Team />
-            </div>
-            <div ref={refs[3]}>
-              <Contact />
-            </div>
-            <Footer />
+          <Nav />
+          <div ref={refs[0]}>
+            <Main />
           </div>
+          <div ref={refs[1]}>
+            <MortgageRelief />
+          </div>
+          <div ref={refs[2]}>
+            <Team />
+          </div>
+          <div ref={refs[3]}>
+            <Contact />
+          </div>
+          <Footer />
         </div>
       </Router>
     </main>

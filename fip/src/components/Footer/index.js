@@ -2,14 +2,9 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <main id='footer' className='flex justify-between'>
-      <section>
-        <h1>NOBLE OAK SOLUTIONS</h1>
-        <h2 className='flex justify-start'>828-838-1274</h2>
-      </section>
-      <section>
-        <button className="footer-button text-3xl">365 Main Ave SW Hickory, NC 28602</button>
-      </section>
+    <main id="footer" className="flex flex-col justify-center">
+      <h1>NOBLE OAK SOLUTIONS</h1>
+      <h2>828-838-1274</h2>
     </main>
   );
 };

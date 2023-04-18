@@ -155,7 +155,7 @@ const Contact = () => {
                 placeholder="Message"
               ></textarea>
 
-              <button className="bg-emerald-200">Submit</button>
+              <button className="">Submit</button>
             </form>
           </div>
 

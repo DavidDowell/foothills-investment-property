@@ -1,6 +1,11 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import MapboxGeocoder from '@mapbox/mapbox-sdk/services/geocoding';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import mapboxgl from '!mapbox-gl';
 
 const Main = () => {
   const [showForm, setShowForm] = useState(false);
@@ -102,7 +107,7 @@ const Main = () => {
           {!showForm ? (
             <button
               onClick={handleButtonClick}
-              className=" bg-emerald-200 text-xl p-5 rounded submit hover:animate-pulse mt-3"
+              className="relief-button text-xl p-5 rounded submit hover:animate-pulse mt-3"
               style={{ width: '300px' }}
             >
               Click Here for Relief
@@ -140,6 +145,9 @@ const Main = () => {
                   placeholder="Address"
                   name="user_address"
                   id="user_address"
+                  ref={searchInput}
+                  onChange={handleSearch}
+                  onKeyDown={handleKeyDown}
                   className="relief-form-address mx-2 text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
                 />
               </div>
@@ -153,7 +161,7 @@ const Main = () => {
                 ></textarea>
               </div>
               <input
-                className="relief-form-submit p-5 bg-emerald-200"
+                className="relief-form-submit p-5"
                 type="submit"
                 value="Submit"
                 id="input-submit"
