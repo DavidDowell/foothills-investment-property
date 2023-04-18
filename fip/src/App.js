@@ -25,7 +25,7 @@ function App() {
           const elementHeight = ref.current.offsetHeight;
           const opacity = Math.max(
             minOpacity,
-            maxOpacity - (scrollTop - elementTop) / (elementHeight * 0.5)
+            maxOpacity - (scrollTop - elementTop) / (elementHeight * 1)
           );
           ref.current.style.opacity = opacity;
         }

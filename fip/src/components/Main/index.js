@@ -6,6 +6,7 @@ import Swal from 'sweetalert2';
 import MapboxGeocoder from '@mapbox/mapbox-sdk/services/geocoding';
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import mapboxgl from '!mapbox-gl';
+import mainImage from '../../assets/images/other/fotor_2023-4-11_20_34_8.png'
 
 const Main = () => {
   const [showForm, setShowForm] = useState(false);
@@ -94,13 +95,14 @@ const Main = () => {
 
   const handleButtonClick = () => {
     setShowForm(true);
+    console.log('click');
   };
 
   return (
-    <div id="Main" className="flex">
-      <section className="main-left flex flex-col">
-        <div className="main-company-name mb-12">
-          <h1 className="font-bold text-6xl mb-4">NOBLE OAK</h1>
+    <div id="Main" className="main-image flex flex-col md:grid grid-rows-4 gap-6">
+      <section className="md:main-left mb-5 row-start-2 row-span-2">
+        <div className="mb-12">
+          <h1 className="font-bold text-6xl">NOBLE OAK</h1>
           <h2 className="font-bold text-5xl">SOLUTIONS</h2>
         </div>
         <div>
@@ -114,7 +116,7 @@ const Main = () => {
             </button>
           ) : (
             <form className="cf" ref={form} onSubmit={checkInfo}>
-              <div className="m-2 flex">
+              <div className="m-2 flex justify-center">
                 <input
                   name="user_name_first"
                   type="text"
@@ -130,7 +132,7 @@ const Main = () => {
                   className="pt-1 mx-2 relief-form-name text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
                 />
               </div>
-              <div className="m-2 flex">
+              <div className="m-2 flex justify-center">
                 <input
                   name="user_phone_number"
                   type="text"
@@ -145,9 +147,9 @@ const Main = () => {
                   placeholder="Address"
                   name="user_address"
                   id="user_address"
-                  ref={searchInput}
-                  onChange={handleSearch}
-                  onKeyDown={handleKeyDown}
+                  // ref={searchInput}
+                  // onChange={handleSearch}
+                  // onKeyDown={handleKeyDown}
                   className="relief-form-address mx-2 text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
                 />
               </div>
@@ -169,9 +171,6 @@ const Main = () => {
             </form>
           )}
         </div>
-      </section>
-      <section className="main-right mx-12">
-        <div className="main-right-image"></div>
       </section>
     </div>
   );

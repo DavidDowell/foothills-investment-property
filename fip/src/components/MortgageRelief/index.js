@@ -9,7 +9,7 @@ const MortgageRelief = () => {
   return (
     <div
       id="MortgageRelief"
-      className="lg:grid grid-rows-4 grid-flow-col gap-4 flex flex-col"
+      className="lg:grid grid-rows-4 grid-flow-col gap-4 flex flex-col justify-center"
     >
       {/* <img src={bullets} id="bullets" alt="bullets" className="hidden md:block ml-5 mt-20"/>
       <img src={bullets2} id="bullets2" alt="bullets2" className="md:hidden ml-5 mt-20"/> */}
@@ -19,7 +19,9 @@ const MortgageRelief = () => {
         alt="handshake"
         className="row-start-2 row-span-2"
       />
-      <h1 className="mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20">
+      <h1 className="first-line:uppercase first-line:tracking-widest
+  first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
+  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20 grow">
         Our mission at Noble Oak Solutions is to empower individuals and
         families to achieve financial freedom through real estate investing. We
         strive to creatively assist our customers in achieving their goals,
