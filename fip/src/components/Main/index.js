@@ -17,6 +17,11 @@ const Main = () => {
     return regex.test(address);
   }
 
+  function validatePhoneNumber(userPhone) {
+    const regex = /^(\d{3}[-\)]?)?\d{3}[-]?\d{4}$/;
+    return regex.test(userPhone);
+  }
+
   const form = useRef();
   const checkInfo = e => {
     e.preventDefault();
@@ -41,10 +46,10 @@ const Main = () => {
         allowEnterKey: true,
       });
       console.log('Must have an Address!');
-    } else if (!userPhone) {
+    } else if (!validatePhoneNumber(userPhone)) {
       Swal.fire({
         icon: 'warning',
-        title: 'Please Provide A Phone Number So We Can Contact You Back',
+        title: 'Please Provide A Valid Phone Number So We Can Contact You Back',
         allowOutsideClick: true,
         allowEnterKey: true,
       });

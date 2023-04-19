@@ -4,6 +4,16 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
 const Contact = () => {
+  function validatePhoneNumber(phone) {
+    const regex = /^(\d{3}[-\)]?)?\d{3}[-]?\d{4}$/;
+    return regex.test(phone);
+  }
+
+  function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+
   const form = useRef();
   const checkInfo = e => {
     e.preventDefault();
@@ -28,10 +38,10 @@ const Contact = () => {
         allowEnterKey: true,
       });
       console.log('Must have a Last Name!');
-    } else if (!phone && !email) {
+    } else if (!validatePhoneNumber(phone) || !validateEmail(email)) {
       Swal.fire({
         icon: 'warning',
-        title: 'Please Provide A Phone Number Or Email!',
+        title: 'Please Provide A Valid Phone Number Or Email!',
         allowOutsideClick: true,
         allowEnterKey: true,
       });

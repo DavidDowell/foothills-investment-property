@@ -27,11 +27,7 @@ code {
     monospace;
 }
 
-#logo {
-  background-image: url("./assets/images/logo/Foothills-150px.png");
-  height: 150px;
-  width: 150px;
-}
+
 
 nav {
   position: fixed;
@@ -44,11 +40,6 @@ nav {
   /* height: 18vh; */
 }
 
-/* .svg-img {
-  background-image: url("./assets/images/other/NavSVG4.svg");
-  background-size: cover;
-  height: 38vh;
-} */
 
 .svg-img-2 {
   background-image: url("./assets/images/other/NavSVG4.svg");
@@ -151,10 +142,6 @@ nav {
     cursor: pointer;
 }
 
-/* .main-right {
-  width: 65%;
-  height: 80vh;
-} */
 
 .image-container {
   height: 300px; /* set a height for the div */
@@ -394,12 +381,27 @@ nav {
   }
 }
 
+@media (max-width: 1334px) {
+  .svg-img-2 {
+    display: none;
+    visibility: hidden;
+  }
+  #Main {
+    margin: 0;
+    justify-content: center;
+  }
+  .main-image {
+    background-position: center;
+  }
+}
+
 
 @media screen and (max-width: 767px) {
   .svg-img-2 {
     display: none;
     visibility: hidden;
   }
+
 
   .main-image {
     background-position: center;

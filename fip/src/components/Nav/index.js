@@ -14,7 +14,7 @@ const Nav = () => {
         </div>
         <div className="flex md:hidden mt-6 ml-6">
           <button
-            className={` text-center fixed text-neutral-900 focus:outline-none bg-white rounded ${
+            className={` text-center fixed text-neutral-900 opacity-80 focus:opacity-40 bg-white rounded ${
               menuOpen ? 'rotate-180' : ''
             }`}
             onClick={() => setMenuOpen(!menuOpen)}
@@ -29,26 +29,26 @@ const Nav = () => {
         </div>
 
         <ul
-          className={`menu nav-items md:flex md:justify-between items-center font-bold md:text-xl lg:text-3xl text-lg px-8 mt-3 mr-10 ${
+          className={`menu nav-items md:flex md:justify-between items-center font-bold md:text-xl lg:text-3xl text-lg px-8 mr-10 ${
             menuOpen ? 'block' : 'hidden'
           } transition-all duration-{#} ease-in-out`}
         >
-          <li className="nav-link hover:text-{} hover:-translate-y-1">
+          <li className="nav-link hover:text-yellow-300 hover:-translate-y-1">
             <Link to="Main" smooth={true} duration={2000}>
               HOME
             </Link>
           </li>
-          <li className="nav-link hover:text-yellow-{#} hover:-translate-y-1">
+          <li className="nav-link hover:text-yellow-300 hover:-translate-y-1">
             <Link to="MortgageRelief" smooth={true} duration={2000}>
               MORTGAGE RELIEF
             </Link>
           </li>
-          <li className="nav-link hover:text-yellow-{#} hover:-translate-y-1">
+          <li className="nav-link hover:text-yellow-300 hover:-translate-y-1">
             <Link to="Team" smooth={true} duration={2000}>
               TEAM
             </Link>
           </li>
-          <li className="nav-link hover:text-yellow-{#} hover:-translate-y-1">
+          <li className="nav-link hover:text-yellow-300 hover:-translate-y-1">
             <Link to="Contact" smooth={true} duration={2000}>
               CONTACT
             </Link>

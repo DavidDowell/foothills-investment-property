@@ -14,8 +14,9 @@ function App() {
 
   useEffect(() => {
     function handleScroll() {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+      // const scrollTop =
+      //   window.pageYOffset || document.documentElement.scrollTop;
+      const scrollY = window.scrollY;
       const maxOpacity = 1;
       const minOpacity = 0; // Set to 0 to start fading out from the top
 
@@ -23,10 +24,10 @@ function App() {
         if (ref.current) {
           const elementTop = ref.current.offsetTop;
           const elementHeight = ref.current.offsetHeight;
+          const relativePosition = scrollY - elementTop;
           const opacity = Math.max(
             minOpacity,
-            maxOpacity - (scrollTop - elementTop) / (elementHeight * 1)
-          );
+            maxOpacity - (relativePosition / (elementHeight)) * maxOpacity);
           ref.current.style.opacity = opacity;
         }
       });
@@ -50,7 +51,7 @@ function App() {
           <div ref={refs[1]}>
             <MortgageRelief />
           </div>
-          <div ref={refs[2]}>
+          <div>
             <Team />
           </div>
           <div ref={refs[3]}>
