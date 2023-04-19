@@ -125,7 +125,7 @@ nav {
 .relief-form-address {
   width: 50%;
   height: 50px;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .relief-form-message {
@@ -359,26 +359,18 @@ nav {
   background-size: cover;
 } */
 
-@media screen and (max-width: 767px) {
-  .svg-img-2 {
-    display: none;
-    visibility: hidden;
+@media screen and (max-width: 1200px) {
+  .contact-form input {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .relief-form-address {
+    font-size: 18px;
   }
 
-  .main-image {
-    background-position: center;
-  }
-
-  #Main {
-    margin-top: 0;
-    justify-content: center;
-  }
-
-  #Team {
-    margin-bottom: 10vh;
-  }
-
-  #Contact {
+    #Contact {
     height: fit-content;
   }
 
@@ -396,9 +388,52 @@ nav {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .relief-form-address {
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .svg-img-2 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .main-image {
+    background-position: center;
+  }
+
+  #Main {
+    margin-top: 0;
+    justify-content: center;
+  }
+
+  .relief-form-name {
+    width: 36.5%;
+  }
+
+  .relief-form-phone, .relief-form-address, .relief-form-message, .relief-form-submit {
+    width: 75%;
+  }
+
+  .relief-form-address {
+    font-size: 1rem;
+  }
+
+  #Team {
+    margin-bottom: 10vh;
+  }
+}
+
 @media screen and (max-width: 500px) {
 .contact-form input, .contact-form textarea {
     font-size: 18px;
+}
+
+.relief-form-address {
+  font-size: 10px;
 }
 }
 
