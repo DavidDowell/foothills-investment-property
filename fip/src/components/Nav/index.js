@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
-import logo from "../../assets/images/logo/FinalOakTree.png";
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
+import logo from '../../assets/images/logo/FinalOakTree.png';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="svg-img">
+      <div className="svg-img-2"></div>
       <div className="flex flex-row justify-between">
         <div className="hidden md:block">
           <img src={logo} alt="logo"></img>
@@ -14,7 +15,7 @@ const Nav = () => {
         <div className="flex md:hidden mt-6 ml-6">
           <button
             className={` text-center fixed text-neutral-900 focus:outline-none bg-white rounded ${
-              menuOpen ? "rotate-180" : ""
+              menuOpen ? 'rotate-180' : ''
             }`}
             onClick={() => setMenuOpen(!menuOpen)}
           >
@@ -29,10 +30,10 @@ const Nav = () => {
 
         <ul
           className={`menu nav-items md:flex md:justify-between items-center font-bold md:text-xl lg:text-3xl text-lg px-8 mt-3 mr-10 ${
-            menuOpen ? "block" : "hidden"
+            menuOpen ? 'block' : 'hidden'
           } transition-all duration-{#} ease-in-out`}
         >
-        <li className="nav-link hover:text-{} hover:-translate-y-1">
+          <li className="nav-link hover:text-{} hover:-translate-y-1">
             <Link to="Main" smooth={true} duration={2000}>
               HOME
             </Link>
