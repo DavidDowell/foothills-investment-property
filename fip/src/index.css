@@ -27,8 +27,6 @@ code {
     monospace;
 }
 
-
-
 nav {
   position: fixed;
   top: 0;
@@ -39,7 +37,6 @@ nav {
   z-index: 5;
   /* height: 18vh; */
 }
-
 
 .svg-img-2 {
   background-image: url("./assets/images/other/NavSVG4.svg");
@@ -142,12 +139,10 @@ nav {
     cursor: pointer;
 }
 
-
 .image-container {
   height: 300px; /* set a height for the div */
   width: max-content;
 }
-
 
 #footer {
   margin-top: 20px;
@@ -352,12 +347,30 @@ nav {
   }
 }
 
+@media (min-width: 1024px) {
+  .svg-img-2 {
+    display: none;
+    visibility: hidden;
+  }
+  #Main {
+    margin: 0;
+    justify-content: center;
+  }
+  .main-image {
+    background-position: center;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  .svg-img-2 {
+    height: 42vh;
+  }
+
   .relief-form-address {
     font-size: 18px;
   }
 
-    #Contact {
+  #Contact {
     height: fit-content;
   }
 
@@ -379,22 +392,11 @@ nav {
   .relief-form-address {
     font-size: 16px;
   }
-}
 
-@media (max-width: 1334px) {
-  .svg-img-2 {
-    display: none;
-    visibility: hidden;
-  }
-  #Main {
-    margin: 0;
-    justify-content: center;
-  }
   .main-image {
-    background-position: center;
+    background-position: top;
   }
 }
-
 
 @media screen and (max-width: 767px) {
   .svg-img-2 {

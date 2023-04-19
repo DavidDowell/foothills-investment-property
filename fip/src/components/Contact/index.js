@@ -38,7 +38,7 @@ const Contact = () => {
         allowEnterKey: true,
       });
       console.log('Must have a Last Name!');
-    } else if (!validatePhoneNumber(phone) || !validateEmail(email)) {
+    } else if (!validatePhoneNumber(phone) && !validateEmail(email)) {
       Swal.fire({
         icon: 'warning',
         title: 'Please Provide A Valid Phone Number Or Email!',
