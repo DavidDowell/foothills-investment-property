@@ -1,3 +1,4 @@
+import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import './components/Nav';
 import Nav from './components/Nav';
@@ -7,10 +8,37 @@ import MortgageRelief from './components/MortgageRelief';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useRef, useEffect } from 'react';
 
 function App() {
-  const refs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  const mainRef = useRef(null);
+  const navRef = useRef(null);
+  const refs = [mainRef, useRef(null), useRef(null), useRef(null)];
+  const [navBackground, setNavBackground] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (mainRef.current) {
+        const mainTop = mainRef.current.offsetTop;
+        const mainHeight = mainRef.current.offsetHeight;
+        const navHeight = navRef.current.offsetHeight;
+        const scrollY = window.scrollY;
+        const maxOpacity = 1;
+        const minOpacity = 0;
+
+        if (scrollY >= mainTop + mainHeight - navHeight) {
+          setNavBackground(true);
+        } else {
+          setNavBackground(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     function handleScroll() {
@@ -27,7 +55,8 @@ function App() {
           const relativePosition = scrollY - elementTop;
           const opacity = Math.max(
             minOpacity,
-            maxOpacity - (relativePosition / (elementHeight)) * maxOpacity);
+            maxOpacity - (relativePosition / elementHeight) * maxOpacity
+          );
           ref.current.style.opacity = opacity;
         }
       });
@@ -43,9 +72,9 @@ function App() {
   return (
     <main>
       <Router>
-        <div className="App">
+        <div className={`App ${navBackground ? 'nav-bg' : ''}`} ref={navRef}>
           <Nav />
-          <div ref={refs[0]}>
+          <div ref={mainRef}>
             <Main />
           </div>
           <div ref={refs[1]}>

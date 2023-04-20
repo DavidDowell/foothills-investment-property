@@ -38,6 +38,10 @@ nav {
   /* height: 18vh; */
 }
 
+/* .scrolled {
+  background-color: var(--primary);
+} */
+
 .svg-img-2 {
   background-image: url("./assets/images/other/NavSVG4.svg");
   background-size: cover;
@@ -156,6 +160,10 @@ nav {
 
 #footer h2 {
   font-size: 20px;
+}
+
+#footer a:hover {
+  color: gold;
 }
 
 .submit {
@@ -348,6 +356,10 @@ nav {
 }
 
 @media (min-width: 1024px) {
+  .scrolled {
+  background-color: var(--primary);
+}
+
   .svg-img-2 {
     display: none;
     visibility: hidden;
@@ -363,7 +375,7 @@ nav {
 
 @media screen and (max-width: 1024px) {
   .svg-img-2 {
-    height: 42vh;
+    height: 46vh;
   }
 
   .relief-form-address {
@@ -389,6 +401,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+
   .relief-form-address {
     font-size: 16px;
   }
