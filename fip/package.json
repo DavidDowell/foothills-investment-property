@@ -1,10 +1,10 @@
 {
-  "name": "foothills-investment-property",
+  "name": "noble-oak-solutions",
   "version": "0.1.0",
   "engines": {
     "node": "16.17.0"
   },
-  "homepage": "http://DavidDowell.github.io/foothills-investment-property",
+  "homepage": "http://DavidDowell.github.io/noble-oak-solutions",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
