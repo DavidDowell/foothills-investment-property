@@ -49,6 +49,7 @@ nav {
 }
 
 .nav-items {
+  /* display: flex; */
   width: 100%;
   cursor: pointer;
 }
@@ -187,10 +188,6 @@ nav {
 
 .textbox {
   color: #021569;
-}
-
-#Team {
-  margin-bottom: 15vh;
 }
 
 .team-header {
@@ -426,6 +423,11 @@ nav {
     width: 60%;
   }
 
+  #Team {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
   #Contact {
     height: fit-content;
   }
@@ -486,13 +488,14 @@ nav {
   }
 
   #Team {
-    margin-bottom: 10vh;
+    margin-bottom: 100px;
   }
 }
 
 @media screen and (max-width: 500px) {
   #Team {
     padding-top: 20px;
+    padding-bottom: 0;
   }
 
 .contact-form input, .contact-form textarea {
@@ -501,5 +504,9 @@ nav {
 
 .relief-form-address {
   font-size: 14px;
+}
+
+.mission {
+  margin: 40px;
 }
 }
