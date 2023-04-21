@@ -24,7 +24,7 @@ const MortgageRelief = () => {
         homeowner while helping them produce the best outcome for themselves and
         their families.We are dedicated to providing customers with the support
         they need to succeed through our innovative investment resources and 20
-        plus years of experience it the industry.
+        plus years of experience in the industry.
       </h1>
     </div>
   );

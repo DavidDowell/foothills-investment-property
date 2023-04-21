@@ -99,8 +99,7 @@ const Contact = () => {
                 Our office is located at: <br />
                 <a href="#contact">
                   365 Main Ave SW <br />
-                  Hickory, NC <br />
-                  28602 <br />
+                  Hickory, NC 28602 <br />
                 </a>
               </address>
             </p>
