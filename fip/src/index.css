@@ -110,7 +110,7 @@ nav {
   font-size: 26px;
 }
 
-.relief-form-address {
+.relief-form-address{
   width: 90%;
   height: 50px;
   font-size: 22px;
@@ -123,7 +123,7 @@ nav {
 .relief-form-message {
   width: 90%;
   height: 80px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .relief-form-submit {
@@ -432,7 +432,8 @@ nav {
   }
 
   .main-image {
-    background-position: top;
+    /* background-position: top; */
+    background-position: center;
   }
 }
 
