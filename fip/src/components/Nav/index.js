@@ -50,7 +50,7 @@ const Nav = () => {
         </div>
 
         <ul
-          className={`menu nav-items md:flex-row md:justify-between items-center font-bold md:text-xl lg:text-3xl text-lg px-8 mr-10 ${
+          className={`menu nav-items md:flex md:justify-between items-center font-bold md:text-xl lg:text-3xl text-lg px-8 mr-10 ${
             menuOpen ? 'block' : 'hidden'
           } transition-all duration-{#} ease-in-out`}
         >
