@@ -83,7 +83,7 @@ function App() {
           <div>
             <Team />
           </div>
-          <div ref={refs[3]}>
+          <div>
             <Contact />
           </div>
           <Footer />

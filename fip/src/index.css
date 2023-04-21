@@ -38,10 +38,6 @@ nav {
   /* height: 18vh; */
 }
 
-/* .scrolled {
-  background-color: var(--primary);
-} */
-
 .svg-img-2 {
   background-image: url("./assets/images/other/NavSVG4.svg");
   background-size: cover;
@@ -101,33 +97,37 @@ nav {
 }
 
 .relief-form-name {
-  width: 24.5%;
+  width: 44%;
   text-align: center;
   height: 50px;
   font-size: 26px;
 }
 
 .relief-form-phone {
-  width: 50%;
+  width: 90%;
   text-align: center;
   height: 50px;
   font-size: 26px;
 }
 
 .relief-form-address {
-  width: 50%;
+  width: 90%;
   height: 50px;
   font-size: 22px;
 }
 
+.address-list {
+  color: black;
+}
+
 .relief-form-message {
-  width: 50%;
+  width: 90%;
   height: 80px;
   font-size: 20px;
 }
 
 .relief-form-submit {
-  width: 50%;
+  width: 90%;
   background-color: #0099ff;
   color: var(--primary);
   text-align: center;
@@ -241,6 +241,7 @@ nav {
   height: 50vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10vh;
 }
 
 .contact {
@@ -349,6 +350,26 @@ nav {
   background-size: cover;
 } */
 
+@media screen and (min-width: 1980px) {
+  #Main section {
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  #Main section {
+    margin-top: 10vh;
+  }
+
+  #Main section h1 {
+    font-size: 72px;
+  }
+
+  #Main section h2 {
+    font-size: 60px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .contact-form input {
     font-size: 16px;
@@ -364,10 +385,12 @@ nav {
     display: none;
     visibility: hidden;
   }
+
   #Main {
     margin: 0;
     justify-content: center;
   }
+
   .main-image {
     background-position: center;
   }
@@ -378,8 +401,17 @@ nav {
     height: 46vh;
   }
 
+  .relief-form-name {
+    width: 29.5%;
+  }
+
   .relief-form-address {
     font-size: 18px;
+    width: 60%;
+  }
+
+  .relief-form-message, .relief-form-submit, .relief-form-phone {
+    width: 60%;
   }
 
   #Contact {
@@ -403,7 +435,7 @@ nav {
 @media screen and (min-width: 768px) {
 
   .relief-form-address {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .main-image {
@@ -445,12 +477,16 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+  #Team {
+    padding-top: 20px;
+  }
+
 .contact-form input, .contact-form textarea {
     font-size: 18px;
 }
 
 .relief-form-address {
-  font-size: 10px;
+  font-size: 14px;
 }
 }
 
