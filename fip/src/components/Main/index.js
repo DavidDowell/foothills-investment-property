@@ -114,7 +114,7 @@ const Main = () => {
           {!showForm ? (
             <button
               onClick={handleButtonClick}
-              className="relief-button text-xl p-5 rounded submit hover:animate-pulse mt-3"
+              className="relief-button text-xl p-5 rounded submit mt-3 shadow-black shadow-xl hover:shadow-inner hover:text-white hover:bg-green-400"
               style={{ width: '300px' }}
             >
               Click Here for Relief
@@ -155,7 +155,7 @@ const Main = () => {
                   // ref={searchInput}
                   // onChange={handleSearch}
                   // onKeyDown={handleKeyDown}
-                  className="relief-form-address mx-2 text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
+                  className="pt-1 relief-form-address mx-2 text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
                 />
               </div>
               <div className="m-2">
@@ -164,7 +164,7 @@ const Main = () => {
                   type="text"
                   placeholder="Tell us how we can help"
                   id="user_message"
-                  className="relief-form-message pt-1 text-center text-zinc-950 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
+                  className="relief-form-message pt-2 text-center text-zinc-950 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
                 ></textarea>
               </div>
               <input
