@@ -65,32 +65,6 @@ const Main = () => {
     }
   };
 
-  // const searchForAddress = address => {
-  //   const geocoder = MapboxGeocoder({
-  //     accessToken: mapboxgl.accessToken,
-  //   });
-
-  //   geocoder
-  //     .forwardGeocode({
-  //       query: address,
-  //       types: ['address'],
-  //       countries: ['US'],
-  //     })
-  //     .send()
-  //     .then(response => {
-  //       const result = response.body.features[0];
-  //       const results = response.body.features.map(feature => {
-  //         // Remove "United States" from the end of the place_name
-  //         feature.place_name = feature.place_name.replace(
-  //           /, United States$/,
-  //           ''
-  //         );
-  //         return feature;
-  //       });
-  //       searchInput.current.value = result.place_name;
-  //     });
-  // };
-
   const [showForm, setShowForm] = useState(false);
 
   function validateAddress(address) {

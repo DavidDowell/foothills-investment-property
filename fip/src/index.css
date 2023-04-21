@@ -344,12 +344,6 @@ nav {
     color: #0099ff;
 }
 
-/* #MortgageRelief {
-  background-image: url(./assets/images/other/layered-waves-haikei3.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 @media screen and (min-width: 1980px) {
   #Main section {
     margin-top: 5vh;
@@ -433,7 +427,6 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-
   .relief-form-address {
     font-size: 22px;
   }
@@ -489,4 +482,3 @@ nav {
   font-size: 14px;
 }
 }
-
