@@ -1,14 +1,96 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-import React, { useRef, useState } from 'react';
+/* eslint-disable */
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import mainImage from '../../assets/images/other/fotor_2023-4-11_20_34_8.png';
 import MapboxGeocoder from '@mapbox/mapbox-sdk/services/geocoding';
-// eslint-disable-next-line import/no-webpack-loader-syntax
 import mapboxgl from '!mapbox-gl';
-import mainImage from '../../assets/images/other/fotor_2023-4-11_20_34_8.png'
 
 const Main = () => {
+  mapboxgl.accessToken =
+    'pk.eyJ1IjoibS1hcm1zdHJvbmciLCJhIjoiY2xjZmI3cTdrMG1zazNvbjY5MXRuMTRndCJ9.J-vt4XTs6_aJjJIhrju_OQ';
+
+  const [searchResults, setSearchResults] = useState([]);
+  const [selectedIndex, setSelectedIndex] = useState(null);
+  const searchInput = useRef(null);
+
+  const handleSearch = event => {
+    const geocoder = MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+    });
+
+    geocoder
+      .forwardGeocode({
+        query: event.target.value,
+        types: ['address'],
+        countries: ['us'],
+      })
+      .send()
+      .then(response => {
+        console.log(response);
+        const results = response.body.features.map(feature => {
+          // Remove "United States" from the end of the place_name
+          feature.place_name = feature.place_name.replace(
+            /, United States$/,
+            ''
+          );
+          return feature;
+        });
+        setSearchResults(results);
+      });
+  };
+
+  const handleResultClick = result => {
+    searchInput.current.value = result.place_name;
+  };
+
+  // When the autocomplete results are displayed you can use arrow keys and the "Enter" button to interact with them
+  const handleKeyDown = event => {
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      // The user can't select something that is not a result
+      setSelectedIndex(prevIndex =>
+        prevIndex === null
+          ? 0
+          : Math.min(prevIndex + 1, searchResults.length - 1)
+      );
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      setSelectedIndex(prevIndex =>
+        prevIndex > 0 ? prevIndex - 1 : prevIndex === 0
+      );
+    } else if (event.key === 'Enter' && selectedIndex !== null) {
+      event.preventDefault();
+      handleResultClick(searchResults[selectedIndex]);
+    }
+  };
+
+  // const searchForAddress = address => {
+  //   const geocoder = MapboxGeocoder({
+  //     accessToken: mapboxgl.accessToken,
+  //   });
+
+  //   geocoder
+  //     .forwardGeocode({
+  //       query: address,
+  //       types: ['address'],
+  //       countries: ['US'],
+  //     })
+  //     .send()
+  //     .then(response => {
+  //       const result = response.body.features[0];
+  //       const results = response.body.features.map(feature => {
+  //         // Remove "United States" from the end of the place_name
+  //         feature.place_name = feature.place_name.replace(
+  //           /, United States$/,
+  //           ''
+  //         );
+  //         return feature;
+  //       });
+  //       searchInput.current.value = result.place_name;
+  //     });
+  // };
+
   const [showForm, setShowForm] = useState(false);
 
   function validateAddress(address) {
@@ -104,7 +186,10 @@ const Main = () => {
   };
 
   return (
-    <div id="Main" className="main-image flex flex-col md:grid grid-rows-4 gap-6">
+    <div
+      id="Main"
+      className="main-image flex flex-col md:grid grid-rows-4 gap-6"
+    >
       <section className="md:main-left mb-5 row-start-2 row-span-2">
         <div className="mb-12">
           <h1 className="font-bold text-6xl">NOBLE OAK</h1>
@@ -152,11 +237,37 @@ const Main = () => {
                   placeholder="Address"
                   name="user_address"
                   id="user_address"
-                  // ref={searchInput}
-                  // onChange={handleSearch}
-                  // onKeyDown={handleKeyDown}
-                  className="pt-1 relief-form-address mx-2 text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
+                  ref={searchInput}
+                  onChange={handleSearch}
+                  onKeyDown={handleKeyDown}
+                  className="relief-form-address mx-2 text-center text-zinc-950 mb-2 rounded focus:bg-indigo-50 focus:ring-1 focus:ring-indigo-900"
                 />
+                <ul className="address-list">
+                  {searchResults.map((result, index) => (
+                    <li
+                      key={result.id}
+                      onClick={() => handleResultClick(result)}
+                      tabIndex={index === selectedIndex ? 0 : -1}
+                      onKeyDown={event => {
+                        if (event.key === 'Enter') {
+                          event.preventDefault();
+                          handleResultClick(result);
+                        }
+                      }}
+                      onMouseEnter={() => setSelectedIndex(index)}
+                      onMouseLeave={() => setSelectedIndex(null)}
+                      style={{
+                        backgroundColor:
+                          index === selectedIndex ? 'lightgray' : 'white',
+                        cursor: 'pointer',
+                      }}
+                      className={index === selectedIndex ? 'selected' : ''}
+                      id="autocomplete-result"
+                    >
+                      {result.place_name}
+                    </li>
+                  ))}
+                </ul>
               </div>
               <div className="m-2">
                 <textarea

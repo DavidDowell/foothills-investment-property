@@ -1,12 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import logo from '../../assets/images/logo/FinalOakTree.png';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isPastMortgageRelief, setIsPastMortgageRelief] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const mortgageReliefSectionOffsetTop =
+        document.getElementById('MortgageRelief').offsetTop;
+      setIsPastMortgageRelief(scrollTop > mortgageReliefSectionOffsetTop);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="svg-img">
+    <nav
+      className={`svg-img navbar ${
+        isPastMortgageRelief ? 'scrolled' : 'bg-transparent'
+      }`}
+    >
       <div className="svg-img-2"></div>
       <div className="flex flex-row justify-between">
         <div className="hidden md:block">

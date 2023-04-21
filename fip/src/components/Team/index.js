@@ -9,7 +9,7 @@ import Mike from '../../assets/images/other/MikeAvatar.svg'
 
 const Team = () => {
   return (
-    <section id="Team" className="mx-20">
+    <section id="Team" className="mx-20 py-80">
       <div className="team-header">Meet The Team</div>
       <div className="team grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         <article class="team-member">
