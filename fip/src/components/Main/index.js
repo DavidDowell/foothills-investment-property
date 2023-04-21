@@ -42,6 +42,7 @@ const Main = () => {
 
   const handleResultClick = result => {
     searchInput.current.value = result.place_name;
+    setSearchResults([]);
   };
 
   // When the autocomplete results are displayed you can use arrow keys and the "Enter" button to interact with them
@@ -62,6 +63,7 @@ const Main = () => {
     } else if (event.key === 'Enter' && selectedIndex !== null) {
       event.preventDefault();
       handleResultClick(searchResults[selectedIndex]);
+      setSearchResults([]);
     }
   };
 
