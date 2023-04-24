@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/noble-oak-solutions/static/css/main.c5a8cea7.css",
-    "main.js": "/noble-oak-solutions/static/js/main.f1ff58ed.js",
+    "main.js": "/noble-oak-solutions/static/js/main.844fbc7c.js",
     "static/js/787.dd1f9698.chunk.js": "/noble-oak-solutions/static/js/787.dd1f9698.chunk.js",
     "static/media/fotor_2023-4-11_20_34_8.png": "/noble-oak-solutions/static/media/fotor_2023-4-11_20_34_8.b1c24a3fe16e02ff7ee7.png",
     "static/media/newCottageImage.png": "/noble-oak-solutions/static/media/newCottageImage.1a5a75cd1dca2de729c1.png",
@@ -15,11 +15,11 @@
     "index.html": "/noble-oak-solutions/index.html",
     "static/media/NavSVG4.svg": "/noble-oak-solutions/static/media/NavSVG4.f99ea97061e55ff3a61e.svg",
     "main.c5a8cea7.css.map": "/noble-oak-solutions/static/css/main.c5a8cea7.css.map",
-    "main.f1ff58ed.js.map": "/noble-oak-solutions/static/js/main.f1ff58ed.js.map",
+    "main.844fbc7c.js.map": "/noble-oak-solutions/static/js/main.844fbc7c.js.map",
     "787.dd1f9698.chunk.js.map": "/noble-oak-solutions/static/js/787.dd1f9698.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5a8cea7.css",
-    "static/js/main.f1ff58ed.js"
+    "static/js/main.844fbc7c.js"
   ]
 }
