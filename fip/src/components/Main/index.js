@@ -71,7 +71,7 @@ const Main = () => {
 
   function validateAddress(address) {
     // Address validation regex
-    const regex = /^\d+\s[A-z]+\s[A-z]+/;
+    const regex = /\d+\s[A-z]+\s[A-z]+(?:,\s[A-z]+)?(?:,\s[A-z]+\s\d{5})?/;
     return regex.test(address);
   }
 
