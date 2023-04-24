@@ -4,7 +4,7 @@
   "engines": {
     "node": "16.17.0"
   },
-  "homepage": "http://noble-oak.netlify.app",
+  "homepage": "http://noble-oak-solutions.netlify.app",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
