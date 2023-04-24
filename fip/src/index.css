@@ -384,6 +384,7 @@ nav {
 @media (min-width: 1024px) {
   .scrolled {
   background-color: var(--primary);
+  height: 270px;
 }
 
   .svg-img-2 {
