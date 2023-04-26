@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.33e82e8b.css",
-    "main.js": "/static/js/main.40ecd9e3.js",
+    "main.css": "/static/css/main.677bc0d1.css",
+    "main.js": "/static/js/main.a5766c5d.js",
     "static/js/787.dd1f9698.chunk.js": "/static/js/787.dd1f9698.chunk.js",
     "static/media/fotor_2023-4-11_20_34_8.png": "/static/media/fotor_2023-4-11_20_34_8.b1c24a3fe16e02ff7ee7.png",
     "static/media/newCottageImage.png": "/static/media/newCottageImage.1a5a75cd1dca2de729c1.png",
@@ -10,16 +10,17 @@
     "static/media/MikeAvatar.svg": "/static/media/MikeAvatar.16083fb68cabeee82500a9d471f03fc2.svg",
     "static/media/FinalOakTree.png": "/static/media/FinalOakTree.f8c121e9cfd4d9b3cddf.png",
     "static/media/MunroAvatar2.svg": "/static/media/MunroAvatar2.c04456eda5755c3603f7d4fbbc192df8.svg",
+    "static/media/DeenaAvatar.svg": "/static/media/DeenaAvatar.58996573f282c4ad3fe9f70942f20a99.svg",
     "static/media/DavidAvatar.svg": "/static/media/DavidAvatar.a83f20c38c062c17b7fb222d2d6d4a66.svg",
     "static/media/handshakesvg2.svg": "/static/media/handshakesvg2.aed587b0d9a94b6c4a027326985b582c.svg",
     "index.html": "/index.html",
     "static/media/NavSVG4.svg": "/static/media/NavSVG4.f99ea97061e55ff3a61e.svg",
-    "main.33e82e8b.css.map": "/static/css/main.33e82e8b.css.map",
-    "main.40ecd9e3.js.map": "/static/js/main.40ecd9e3.js.map",
+    "main.677bc0d1.css.map": "/static/css/main.677bc0d1.css.map",
+    "main.a5766c5d.js.map": "/static/js/main.a5766c5d.js.map",
     "787.dd1f9698.chunk.js.map": "/static/js/787.dd1f9698.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33e82e8b.css",
-    "static/js/main.40ecd9e3.js"
+    "static/css/main.677bc0d1.css",
+    "static/js/main.a5766c5d.js"
   ]
 }
