@@ -5,7 +5,8 @@ import David from '../../assets/images/other/DavidAvatar.svg';
 import Jen from '../../assets/images/other/JenAvatar.svg';
 import Jeremy from '../../assets/images/other/MunroAvatar2.svg';
 import Logan from '../../assets/images/other/LoganAvatar.svg';
-import Mike from '../../assets/images/other/MikeAvatar.svg'
+import Mike from '../../assets/images/other/MikeAvatar.svg';
+import Deena from '../../assets/images/other/DeenaAvatar.svg'
 
 const Team = () => {
   return (
@@ -46,7 +47,7 @@ const Team = () => {
           <img src={Jen} />
           <div class="member-bio">
             <h3 class="member-name">Jennifer Travis</h3>
-            <h4 class="member-role">IT / Acquisitions</h4>
+            <h4 class="member-role">HR / Acquisitions</h4>
             <br />
             <h5>Contact:</h5>
             <h4>jennifer@noble-oak.com</h4>
@@ -60,6 +61,16 @@ const Team = () => {
             <br />
             <h5>Contact:</h5>
             <h4>david@noble-oak.com</h4>
+          </div>
+        </article>
+        <article class="team-member">
+          <img src={Deena} />
+          <div class="member-bio">
+            <h3 class="member-name">Deena Mayberry</h3>
+            <h4 class="member-role">Office Manager</h4>
+            <br />
+            <h5>Contact:</h5>
+            <h4>deena@noble-oak.com</h4>
           </div>
         </article>
       </div>

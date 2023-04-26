@@ -61,7 +61,7 @@ const Nav = () => {
           </li>
           <li className="nav-link hover:text-yellow-300 hover:-translate-y-1">
             <Link to="MortgageRelief" smooth={true} duration={2000}>
-              MORTGAGE RELIEF
+              GOAL
             </Link>
           </li>
           <li className="nav-link hover:text-yellow-300 hover:-translate-y-1">

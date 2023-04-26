@@ -16,7 +16,7 @@ const MortgageRelief = () => {
       <h1
         className="first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20 grow tracking-widest"
+  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20 grow whitespace-normal"
       >
         We strive to empower and assist individuals and families through
         education, information and relationships. Our team of professionals
