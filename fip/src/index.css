@@ -341,6 +341,10 @@ nav {
     border-radius: 10px;
 }
 
+.avatar {
+  max-height: 520px;
+}
+
 .contact-form button {
   background-color: white;
   color: var(--primary);
