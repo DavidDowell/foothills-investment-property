@@ -39,7 +39,7 @@ nav {
 }
 
 .svg-img-2 {
-  background-image: url("./assets/images/other/NavSVG4.svg");
+  /* background-image: url("./assets/images/other/NavSVG4.svg"); */
   background-size: cover;
   height: 38vh;
   width: 100%;
@@ -58,9 +58,9 @@ nav {
   width: 25%;
 }
 
-#Main {
+/* #Main {
   margin-top: 10vh;
-}
+} */
 
 .main-image{
   background-image: url("./assets/images/other/newCottageImage.png");
@@ -459,6 +459,11 @@ nav {
   .main-image {
     background-position: center;
   }
+
+  .scrolled {
+  background-color: var(--primary);
+  height: 210px;
+}
 }
 
 @media screen and (max-width: 767px) {
