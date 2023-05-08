@@ -12,8 +12,8 @@ const Team = () => {
   return (
     <section id="Team" className="mx-20 py-80">
       <div className="team-header">Meet The Team</div>
-      <div className="team grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-        <article class="team-member">
+      <div className="team snap-x snap-mandatory overflow-scroll max-lg:flex grid gap-8 grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+        <article class="snap-center team-member">
           <img className='avatar' src={Mike} />
           <div class="member-bio">
             <h3 class="member-name">Mike McNeely</h3>
@@ -23,7 +23,7 @@ const Team = () => {
             <h4>mike@noble-oak.com</h4>
           </div>
         </article>
-        <article class="team-member">
+        <article class="snap-center team-member">
           <img className='avatar' src={Logan} />
           <div class="member-bio">
             <h3 class="member-name">Logan McNeely</h3>
@@ -33,7 +33,7 @@ const Team = () => {
             <h4>logan@noble-oak.com</h4>
           </div>
         </article>
-        <article class="team-member">
+        <article class="snap-center team-member">
           <img className='avatar' src={Jeremy} />
           <div class="member-bio">
             <h3 class="member-name">Jeremy Munro</h3>
@@ -43,7 +43,7 @@ const Team = () => {
             <h4>jeremy@noble-oak.com</h4>
           </div>
         </article>
-        <article class="team-member">
+        <article class="snap-center team-member">
           <img className='avatar' src={Jen} />
           <div class="member-bio">
             <h3 class="member-name">Jennifer Travis</h3>
@@ -53,7 +53,7 @@ const Team = () => {
             <h4>jennifer@noble-oak.com</h4>
           </div>
         </article>
-        <article class="team-member">
+        <article class="snap-center team-member">
           <img className='avatar' src={David} />
           <div class="member-bio">
             <h3 class="member-name">David Dowell</h3>
@@ -63,7 +63,7 @@ const Team = () => {
             <h4>david@noble-oak.com</h4>
           </div>
         </article>
-        <article class="team-member">
+        <article class="snap-center team-member">
           <img className='avatar' src={Deena} />
           <div class="member-bio">
             <h3 class="member-name">Deena Mayberry</h3>
