@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.677bc0d1.css",
-    "main.js": "/static/js/main.a5766c5d.js",
+    "main.css": "/static/css/main.643affd0.css",
+    "main.js": "/static/js/main.6bebeafe.js",
     "static/js/787.dd1f9698.chunk.js": "/static/js/787.dd1f9698.chunk.js",
     "static/media/fotor_2023-4-11_20_34_8.png": "/static/media/fotor_2023-4-11_20_34_8.b1c24a3fe16e02ff7ee7.png",
+    "static/media/RealDave.JPG": "/static/media/RealDave.76c7abab62552b1849d4.JPG",
+    "static/media/RealJen.jpeg": "/static/media/RealJen.603a998969c6ff1ee462.jpeg",
     "static/media/newCottageImage.png": "/static/media/newCottageImage.1a5a75cd1dca2de729c1.png",
-    "static/media/JenAvatar.svg": "/static/media/JenAvatar.9220f638c19ae956000e009440d6f1b6.svg",
-    "static/media/LoganAvatar.svg": "/static/media/LoganAvatar.a6b3a1588c0c062e74d002b959491f23.svg",
+    "static/media/RealLogan.jpeg": "/static/media/RealLogan.032148c3b59ed4ade2eb.jpeg",
     "static/media/MikeAvatar.svg": "/static/media/MikeAvatar.16083fb68cabeee82500a9d471f03fc2.svg",
     "static/media/FinalOakTree.png": "/static/media/FinalOakTree.f8c121e9cfd4d9b3cddf.png",
     "static/media/MunroAvatar2.svg": "/static/media/MunroAvatar2.c04456eda5755c3603f7d4fbbc192df8.svg",
     "static/media/DeenaAvatar.svg": "/static/media/DeenaAvatar.58996573f282c4ad3fe9f70942f20a99.svg",
-    "static/media/DavidAvatar.svg": "/static/media/DavidAvatar.a83f20c38c062c17b7fb222d2d6d4a66.svg",
     "static/media/handshakesvg2.svg": "/static/media/handshakesvg2.aed587b0d9a94b6c4a027326985b582c.svg",
     "index.html": "/index.html",
-    "static/media/NavSVG4.svg": "/static/media/NavSVG4.f99ea97061e55ff3a61e.svg",
-    "main.677bc0d1.css.map": "/static/css/main.677bc0d1.css.map",
-    "main.a5766c5d.js.map": "/static/js/main.a5766c5d.js.map",
+    "main.643affd0.css.map": "/static/css/main.643affd0.css.map",
+    "main.6bebeafe.js.map": "/static/js/main.6bebeafe.js.map",
     "787.dd1f9698.chunk.js.map": "/static/js/787.dd1f9698.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.677bc0d1.css",
-    "static/js/main.a5766c5d.js"
+    "static/css/main.643affd0.css",
+    "static/js/main.6bebeafe.js"
   ]
 }
