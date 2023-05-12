@@ -208,7 +208,7 @@ nav {
     background: white;
     color: var(--primary);
     flex: 1;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 500px;
     border: 24px solid white;
     border-radius: 12px;
