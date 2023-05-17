@@ -521,55 +521,58 @@ nav {
 }
 }
 
+.reno-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .top-house {
-  width: 100%;
-  height: 200px;
+  width: 65%;
+  height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
   background-size: cover;
   background-position: 0px 0px;
+  border-radius: 6px;
 }
 
 .top-mid-house {
   margin: 8px 0px 0px 0px;
-  width: 100%;
-  height: 200px;
+  width: 65%;
+  height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
   background-size: cover;
-  background-position: 0px -200px;
+  background-position: 0px -170px;
+  border-radius: 6px;
 }
 
 .mid-house {
   margin: 8px 0px 0px 0px;
-  width: 100%;
-  height: 200px;
+  width: 65%;
+  height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
   background-size: cover;
-  background-position: 0px -400px;
+  background-position: 0px -340px;
+  border-radius: 6px;
 }
 
 .low-mid-house {
   margin: 8px 0px 0px 0px;
-  width: 100%;
-  height: 200px;
+  width: 65%;
+  height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
   background-size: cover;
-  background-position: 0px -600px;
+  background-position: 0px -510px;
+  border-radius: 6px;
 }
 
 .bottom-house {
   margin: 8px 0px 0px 0px;
-  width: 100%;
-  height: 200px;
+  width: 65%;
+  height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
   background-size: cover;
-  background-position: 0px -800px;
-}
-
-.ground {
-  margin: 8px 0px 0px 0px;
-  width: 100%;
-  height: 200px;
-  background-image: url('./assets/images/other/fixerupper.png');
-  background-size: cover;
-  background-position: 0px -1000px;
+  background-position: 0px -680px;
+  border-radius: 6px;
 }
