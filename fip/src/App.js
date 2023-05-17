@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import MortgageRelief from './components/MortgageRelief';
 import Team from './components/Team';
 import Contact from './components/Contact';
+import WhatWeDo from './components/WWD';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -76,6 +77,9 @@ function App() {
           <Nav />
           <div ref={mainRef}>
             <Main />
+          </div>
+          <div>
+            <WhatWeDo />
           </div>
           <div ref={refs[1]}>
             <MortgageRelief />
