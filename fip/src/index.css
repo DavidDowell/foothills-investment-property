@@ -15,7 +15,6 @@ html, body {
   font-family: "Righteous", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: url(./assets/images/other/layered-waves-green.svg); */
   background-color: var(--primary);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,38 +28,35 @@ code {
 
 nav {
   position: fixed;
-  top: 0;
+  bottom: 40px;
+  right: 40px;
   width: 100%;
-  /* background-image: url("./assets/images/other/slantedwave.svg");
-  background-size:cover;
-  background-repeat: no-repeat; */
   z-index: 5;
-  /* height: 18vh; */
 }
 
-.svg-img-2 {
-  /* background-image: url("./assets/images/other/NavSVG4.svg"); */
-  background-size: cover;
-  height: 38vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: -1;
-}
-
-.nav-items {
-  /* display: flex; */
-  width: 100%;
-  cursor: pointer;
+.nav-links {
+  width: 150px;
+  align-items: start;
 }
 
 .nav-link {
-  width: 25%;
+  cursor: pointer;
+  margin: 4px 0;
+  width: 100%;
 }
 
-/* #Main {
-  margin-top: 10vh;
-} */
+.nav-link:hover {
+  color: gold;
+  .nav-link-line {
+    background-color: gold;
+  }
+}
+
+.nav-link-line {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
 
 .main-image{
   background-image: url("./assets/images/other/newCottageImage.png");
@@ -196,7 +192,7 @@ nav {
 }
 
 .team {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     /* display: flex;
     flex-wrap: wrap; */
@@ -221,7 +217,7 @@ nav {
 }
 
 .team-member img {
-    width: 100%;
+  width: 100%;
 }
 
 .member-bio {
@@ -250,9 +246,11 @@ nav {
 #Contact {
   background-color: var(--primary);
   height: 50vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 10vh;
+  padding: 0 150px;
 }
 
 .contact {
@@ -331,14 +329,14 @@ nav {
 }
 
 .contact-form button {
-    width: 100%;
-    border: none;
-    color: var(--primary);
-    text-align: center;
-    padding: 15px 0;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 10px;
+  width: 100%;
+  border: none;
+  color: var(--primary);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 .avatar {
@@ -538,6 +536,10 @@ nav {
   cursor: pointer;
 }
 
+.top-house-active {
+  filter: grayscale(0);
+}
+
 .top-mid-house {
   margin: 8px 0px 0px 0px;
   width: 65%;
@@ -547,6 +549,10 @@ nav {
   background-position: 0px -170px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.top-mid-house-active {
+  filter: grayscale(0);
 }
 
 .mid-house {
@@ -560,6 +566,10 @@ nav {
   cursor: pointer;
 }
 
+.mid-house-active {
+  filter: grayscale(0);
+}
+
 .low-mid-house {
   margin: 8px 0px 0px 0px;
   width: 65%;
@@ -569,6 +579,10 @@ nav {
   background-position: 0px -510px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.low-mid-house-active {
+  filter: grayscale(0);
 }
 
 .bottom-house {
@@ -582,6 +596,10 @@ nav {
   cursor: pointer;
 }
 
+.bottom-house-active {
+  filter: grayscale(0);
+}
+
 .image-text {
   display: flex;
   flex-direction: column;
@@ -589,4 +607,25 @@ nav {
   margin-top: 65px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.text-container {
+  background-color: white;
+  width: 65%;
+  color: var(--primary);
+}
+
+.text-container-header {
+  border-bottom: 6px solid var(--primary);
+  width: fit-content;
+}
+
+.text-container video {
+  height: 400px;
+  width: 400px;
+}
+
+.text-container img {
+  height: 400px;
+  width: 400px;
 }
