@@ -166,7 +166,7 @@ const Main = () => {
       id="Main"
       className="main-image flex flex-col md:grid grid-rows-4 gap-6"
     >
-      <section className="md:main-left mb-5 row-start-2 row-span-2">
+      <section className="text-center md:main-left mb-5 row-start-2 row-span-2">
         <div className="mb-12">
           <h1 className="font-bold text-6xl">NOBLE OAK</h1>
           <h2 className="font-bold text-5xl">SOLUTIONS</h2>

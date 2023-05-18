@@ -4,7 +4,6 @@ import './components/Nav';
 import Main from './components/Main';
 import NewNav from './components/NewNav';
 import Footer from './components/Footer';
-import MortgageRelief from './components/MortgageRelief';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import WhatWeDo from './components/WWD';
@@ -33,7 +32,6 @@ function App() {
         <Main />
         {showNav && <NewNav />}
         <WhatWeDo id="WWD" />
-        {/* <MortgageRelief /> */}
         <Team />
         <Contact />
         <Footer />

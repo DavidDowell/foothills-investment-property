@@ -4,31 +4,31 @@ import logo from '../../assets/images/logo/FinalOakTree.png';
 
 const NewNav = () => {
   return (
-    <nav id="Nav" className="flex justify-end">
-      <ul className="flex flex-col items-end nav-links">
+    <nav id="Nav" className="flex justify-start">
+      <ul className="flex flex-col nav-links">
         <li className="nav-link flex items-center justify-between hover:-translate-x-4">
           <Link to="Main" smooth={true} duration={2000} className="mr-4">
             HOME
           </Link>
-          <div className="nav-link-line"></div>
+          <Link to="Main" smooth={true} duration={2000} className="nav-link-line"></Link>
         </li>
         <li className="nav-link flex items-center justify-between hover:-translate-x-4">
           <Link to="WWD" smooth={true} duration={2000} className="mr-4">
-            About
+            ABOUT
           </Link>
-          <div className="nav-link-line"></div>
+          <Link to="WWD" smooth={true} duration={2000} className="nav-link-line"></Link>
         </li>
         <li className="nav-link flex items-center justify-between hover:-translate-x-4">
           <Link to="Team" smooth={true} duration={2000} className="mr-4">
             TEAM
           </Link>
-          <div className="nav-link-line"></div>
+          <Link to="Team" smooth={true} duration={2000} className="nav-link-line"></Link >
         </li>
         <li className="nav-link flex items-center justify-between hover:-translate-x-4">
           <Link to="Contact" smooth={true} duration={2000} className="mr-4">
             CONTACT
           </Link>
-          <div className="nav-link-line"></div>
+          <Link to="Contact" smooth={true} duration={2000} className="nav-link-line"></Link>
         </li>
       </ul>
     </nav>

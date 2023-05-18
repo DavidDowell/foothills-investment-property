@@ -71,7 +71,7 @@ const WhatWeDo = () => {
   };
 
   return (
-    <div id="WWD" className="mt-20 reno-container">
+    <div id="WWD" className="mt-20 reno-container select-none">
       <h1 className="text-left text-6xl p-4">What We Do</h1>
       <div
         className="top-house grayscale hover:grayscale-0"
@@ -84,18 +84,18 @@ const WhatWeDo = () => {
         <div className="text-container mortgage-container">
           <div
             id="MortgageRelief"
-            className="lg:grid grid-rows-3 grid-flow-col gap-4 flex flex-col justify-center"
+            className="grid grid-rows-1 grid-flow-col gap-4"
           >
             <img
               src={handshakesvg2}
               id="handshake"
               alt="handshake"
-              className="row-start-2 row-span-2"
+              className=" max-md:hidden row-start-1 row-span-1 max-lg:row-span-1"
             />
             <h1
               className="first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20 grow whitespace-normal"
+  first-letter:mr-3 first-letter:float-left mission text-lg lg:text-3xl text-left row-start-1 row-span-1 m-10 grow whitespace-normal"
             >
               We strive to empower and assist individuals and families through
               education, information and relationships. Our team of
@@ -119,11 +119,11 @@ const WhatWeDo = () => {
       {showCashOffer && (
         <div className="text-container cash-container">
           <div className="flex justify-center">
-            <header className="text-5xl flex text-container-header pb-2 my-4">
+            <header className="text-2xl lg:text-4xl flex text-container-header pb-2 my-4">
               Cash Offers Up To $1 Billion!
             </header>
           </div>
-          <div className="flex items-center">
+          <div className="flex flex-wrap justify-center items-center">
             <video autoPlay loop muted>
               <source src={cashOffer} type="video/mp4" />
             </video>
@@ -131,7 +131,7 @@ const WhatWeDo = () => {
             <p
               className="first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20 grow whitespace-normal"
+  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
@@ -154,11 +154,11 @@ const WhatWeDo = () => {
       {showFinancingOptions && (
         <div className="text-container financing-container">
           <div className="flex justify-center">
-            <header className="text-5xl flex text-container-header pb-2 my-4">
+            <header className="text-2xl lg:text-4xl flex text-container-header pb-2 my-4">
               Financing As Low As $1/mo For Eternity!
             </header>
           </div>
-          <div className="flex items-center">
+          <div className="flex flex-wrap justify-center items-center">
             {/* <video autoPlay loop muted>
               <source src={cashOffer} type="video/mp4" />
             </video> */}
@@ -166,7 +166,7 @@ const WhatWeDo = () => {
             <p
               className="first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20 grow whitespace-normal"
+  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
@@ -189,11 +189,11 @@ const WhatWeDo = () => {
       {showRentalProperties && (
         <div className="text-container rental-container">
           <div className="flex justify-center">
-            <header className="text-5xl flex text-container-header pb-2 my-4">
+            <header className="text-2xl lg:text-4xl flex text-container-header pb-2 my-4">
               Rental Properties As Big As 4 sq ft.
             </header>
           </div>
-          <div className="flex items-center">
+          <div className="flex flex-wrap justify-center items-center">
             {/* <video autoPlay loop muted>
               <source src={cashOffer} type="video/mp4" />
             </video> */}
@@ -201,7 +201,7 @@ const WhatWeDo = () => {
             <p
               className="first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20 grow whitespace-normal"
+  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
@@ -224,11 +224,11 @@ const WhatWeDo = () => {
       {showMovingServices && (
         <div className="text-container moving-container">
           <div className="flex justify-center">
-            <header className="text-5xl flex text-container-header pb-2 my-4">
+            <header className="text-2xl lg:text-4xl flex text-container-header pb-2 my-4">
               Keep Up To 20% Of Your Stuff During The Move!
             </header>
           </div>
-          <div className="flex items-center">
+          <div className="flex flex-wrap justify-center items-center">
             {/* <video autoPlay loop muted>
               <source src={cashOffer} type="video/mp4" />
             </video> */}
@@ -236,7 +236,7 @@ const WhatWeDo = () => {
             <p
               className="first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-4xl text-left row-start-2 row-span-2 m-20 grow whitespace-normal"
+  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus

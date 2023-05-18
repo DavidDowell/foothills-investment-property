@@ -28,15 +28,29 @@ code {
 
 nav {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 100%;
+  top: 80px;
+  left: 20px;
+  width: max-content;
   z-index: 5;
 }
 
 .nav-links {
   width: 150px;
   align-items: start;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-links {
+    width: 120px;
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-links {
+    display: none;
+    align-items: start;
+  }
 }
 
 .nav-link {
@@ -530,8 +544,8 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size: cover;
-  background-position: 0px 0px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -545,7 +559,7 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size: cover;
+  background-size:  100% auto;
   background-position: 0px -170px;
   border-radius: 6px;
   cursor: pointer;
@@ -560,7 +574,7 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size: cover;
+  background-size: 100% auto;
   background-position: 0px -340px;
   border-radius: 6px;
   cursor: pointer;
@@ -575,7 +589,7 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size: cover;
+  background-size: 100% auto;
   background-position: 0px -510px;
   border-radius: 6px;
   cursor: pointer;
@@ -590,11 +604,12 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size: cover;
+  background-size: 100% auto;
   background-position: 0px -680px;
   border-radius: 6px;
   cursor: pointer;
 }
+
 
 .bottom-house-active {
   filter: grayscale(0);
@@ -621,7 +636,7 @@ nav {
 }
 
 .text-container video {
-  height: 400px;
+  height: 200px;
   width: 400px;
 }
 

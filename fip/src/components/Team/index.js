@@ -11,7 +11,7 @@ import Deena from '../../assets/images/other/DeenaAvatar.svg'
 const Team = () => {
   return (
     <section id="Team" className="mx-10 py-80">
-      <div className="team-header">Meet The Team</div>
+      <div className="team-header text-center">Meet The Team</div>
       <div className="team snap-x snap-mandatory overflow-scroll max-lg:flex grid gap-8 grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         <article class="snap-center team-member">
           <img className='avatar' src={Mike} />
