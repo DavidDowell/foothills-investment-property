@@ -93,7 +93,7 @@ const WhatWeDo = () => {
               className=" max-md:hidden row-start-1 row-span-1 max-lg:row-span-1"
             />
             <h1
-              className="first-line:uppercase first-line:tracking-widest
+              className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
   first-letter:mr-3 first-letter:float-left mission text-lg lg:text-3xl text-left row-start-1 row-span-1 m-10 grow whitespace-normal"
             >
@@ -129,7 +129,7 @@ const WhatWeDo = () => {
             </video>
             {/* <img src={handGiving} alt="hello" /> */}
             <p
-              className="first-line:uppercase first-line:tracking-widest
+              className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
   first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
@@ -164,7 +164,7 @@ const WhatWeDo = () => {
             </video> */}
             <img src={financing} alt="hello" />
             <p
-              className="first-line:uppercase first-line:tracking-widest
+              className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
   first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
@@ -199,7 +199,7 @@ const WhatWeDo = () => {
             </video> */}
             <img src={rent} alt="hello" />
             <p
-              className="first-line:uppercase first-line:tracking-widest
+              className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
   first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
@@ -234,7 +234,7 @@ const WhatWeDo = () => {
             </video> */}
             <img src={moving} alt="hello" />
             <p
-              className="first-line:uppercase first-line:tracking-widest
+              className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
   first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
