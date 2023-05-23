@@ -544,7 +544,7 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size: 100% auto;
+  background-size: auto;
   background-repeat: no-repeat;
   border-radius: 6px;
   cursor: pointer;
@@ -559,7 +559,7 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size:  100% auto;
+  background-size: auto;
   background-position: 0px -170px;
   border-radius: 6px;
   cursor: pointer;
@@ -574,11 +574,12 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size: 100% auto;
+  background-size: auto;
   background-position: 0px -340px;
   border-radius: 6px;
   cursor: pointer;
 }
+
 
 .mid-house-active {
   filter: grayscale(0);
@@ -589,7 +590,7 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size: 100% auto;
+  background-size: auto;
   background-position: 0px -510px;
   border-radius: 6px;
   cursor: pointer;
@@ -604,7 +605,7 @@ nav {
   width: 65%;
   height: 170px;
   background-image: url('./assets/images/other/fixerupper.png');
-  background-size: 100% auto;
+  background-size: auto;
   background-position: 0px -680px;
   border-radius: 6px;
   cursor: pointer;
@@ -643,4 +644,16 @@ nav {
 .text-container img {
   height: 400px;
   width: 400px;
+}
+
+.mortgage-container {
+  transition: opacity 0.5s ease; /* Adjust the duration and easing function as needed */
+}
+
+.mortgage-container.open {
+  opacity: 1;
+}
+
+.mortgage-container.closed {
+  opacity: 0;
 }
