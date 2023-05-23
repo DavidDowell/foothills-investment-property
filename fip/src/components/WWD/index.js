@@ -93,7 +93,9 @@ const WhatWeDo = () => {
               className="max-md:hidden"
             />
             <h1
-              className="text-lg lg:text-3xl m-2 whitespace-normal text-rose-500"
+              className="text-container-description first-line:uppercase first-line:tracking-widest
+  first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
+  first-letter:mr-3 first-letter:float-left mission text-lg lg:text-3xl text-left row-start-1 row-span-1 m-10 grow whitespace-normal"
             >
               Battling foreclosure?
             </h1>
@@ -124,20 +126,20 @@ const WhatWeDo = () => {
             <video className='max-md:hidden' autoPlay loop muted>
               <source src={cashOffer} type="video/mp4" />
             </video>
-            <ul className='text-3xl max-md:text-xl mt-10 mb-10'>
-                <div className='flex justify-between'>
-                    <li>Quick Cash Offer</li>
-                    <li className='ml-20'>✅</li>
-                </div>
-                <div className='flex justify-between'>
-                    <li>No listing or agent fees</li>
-                    <li>✅</li>
-                </div>
-                <div className='flex justify-between'>
-                <li>No repair work required</li>
-                <li>✅</li>
-                </div>
-            </ul>
+            {/* <img src={handGiving} alt="hello" /> */}
+            <p
+              className="text-container-description first-line:uppercase first-line:tracking-widest
+  first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
+  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
+              risus at ultrices mi tempus imperdiet nulla malesuada
+              pellentesque. Nibh nisl condimentum id venenatis a condimentum
+              vitae sapien pellentesque. Morbi leo urna molestie at. Enim diam
+              vulputate ut pharetra sit. Ipsum dolor sit amet consectetur
+              adipiscing.
+            </p>
           </div>
         </div>
       )}
@@ -161,7 +163,7 @@ const WhatWeDo = () => {
             </video> */}
             <img className='max-md:hidden' src={financing} alt="hello" />
             <p
-              className="first-line:uppercase first-line:tracking-widest
+              className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
   first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
@@ -196,7 +198,7 @@ const WhatWeDo = () => {
             </video> */}
             <img className='max-md:hidden' src={rent} alt="hello" />
             <p
-              className="first-line:uppercase first-line:tracking-widest
+              className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
   first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
@@ -231,7 +233,7 @@ const WhatWeDo = () => {
             </video> */}
             <img className='max-md:hidden' src={moving} alt="hello" />
             <p
-              className="first-line:uppercase first-line:tracking-widest
+              className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
   first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
