@@ -20,7 +20,7 @@ function App() {
       const whatWeDoPosition = whatWeDoEl.offsetTop;
       const distanceFromTop =
         ((scrollPosition - whatWeDoPosition) / whatWeDoHeight) * 100;
-      setShowNav(distanceFromTop >= -35); // Show the nav when user scrolls past 20% of the height of WhatWeDo
+      setShowNav(distanceFromTop >= -10); // Show the nav when user scrolls past 20% of the height of WhatWeDo
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
