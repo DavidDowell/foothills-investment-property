@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
 import logo from '../../assets/images/logo/FinalOakTree.png';
 
@@ -6,7 +6,7 @@ const NewNav = () => {
   return (
     <nav id="Nav" className="flex">
       <ul className="flex flex-col nav-links">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="Company Logo for Noble Oak Solutions" />
         <Link
           to="Main"
           smooth={true}

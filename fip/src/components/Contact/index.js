@@ -85,7 +85,7 @@ const Contact = () => {
   return (
     <section id="Contact" className="flex">
       <div className="contact">
-        <div class="contact-info">
+        <div className="contact-info">
           <div className="contact-left">
             <h3>Noble Oak Solutions</h3>
             <p>
@@ -110,10 +110,10 @@ const Contact = () => {
             </p>
           </div>
 
-          <div class="contact-form">
+          <div className="contact-form">
             <h3>Contact Us</h3>
             <form className="text-start" ref={form} onSubmit={checkInfo}>
-              <label for="contact-name">Your Name</label>
+              <label htmlFor="contact-name">Your Name</label>
               <div className="flex">
                 <div className="flex flex-col" style={{ width: '50%' }}>
                   <input
@@ -137,7 +137,7 @@ const Contact = () => {
 
               <div className="flex">
                 <div className="flex flex-col" style={{ width: '50%' }}>
-                  <label for="contact-info">Phone</label>
+                  <label htmlFor="contact-phone">Phone</label>
                   <input
                     type="text"
                     id="contact-phone"
@@ -147,7 +147,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col" style={{ width: '50%' }}>
-                  <label for="contact-info">Email</label>
+                  <label htmlFor="contact-email">Email</label>
                   <input
                     type="text"
                     id="contact-email"
@@ -158,7 +158,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <label for="contact-message">Message</label>
+              <label htmlFor="contact-message">Message</label>
               <textarea
                 id="contact-message"
                 name="contact-message"
@@ -172,9 +172,9 @@ const Contact = () => {
           <div className="contact-map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.7837505392176!2d-81.34679132287093!3d35.73153652720673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88512e2b750c3e75%3A0x57418a8a9b6c378!2s365%20Main%20Ave%20SW%2C%20Hickory%2C%20NC%2028602!5e0!3m2!1sen!2sus!4v1681418385138!5m2!1sen!2sus"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
               title="Hello"
             ></iframe>
           </div>

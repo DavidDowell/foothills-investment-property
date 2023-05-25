@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import handshakesvg2 from '../../assets/images/other/handshakesvg2.svg';
 import cashOffer from '../../assets/other/cash-payment.mp4';
 import financing from '../../assets/other/financing.svg';
-import handGiving from '../../assets/other/hand-giving-money.svg';
+// import handGiving from '../../assets/other/hand-giving-money.svg';
 import rent from '../../assets/other/house-for-rent.png';
 import moving from '../../assets/other/moving.svg';
 
@@ -100,10 +100,12 @@ const WhatWeDo = () => {
               Battling foreclosure?
             </h1>
             <h1 className="text-lg lg:text-3xl m-2 whitespace-normal text-rose-500">
-            Inherit a property that requires too much up-keep?
+              Inherit a property that requires too much up-keep?
             </h1>
             <h1 className="text-center mission text-lg lg:text-3xl m-8 whitespace-normal">
-                Noble Oak Solutions provides services to homeowners struggling with costly properties. Consultations are free and we provide many exit strategies for homeowners.
+              Noble Oak Solutions provides services to homeowners struggling
+              with costly properties. Consultations are free and we provide many
+              exit strategies for homeowners.
             </h1>
           </div>
         </div>
@@ -123,7 +125,7 @@ const WhatWeDo = () => {
             </header>
           </div>
           <div className="flex flex-wrap justify-center items-center">
-            <video className='max-md:hidden' autoPlay loop muted>
+            <video className="max-md:hidden" autoPlay loop muted>
               <source src={cashOffer} type="video/mp4" />
             </video>
             {/* <img src={handGiving} alt="hello" /> */}
@@ -161,7 +163,7 @@ const WhatWeDo = () => {
             {/* <video autoPlay loop muted>
               <source src={cashOffer} type="video/mp4" />
             </video> */}
-            <img className='max-md:hidden' src={financing} alt="hello" />
+            <img className="max-md:hidden" src={financing} alt="financing" />
             <p
               className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
@@ -196,7 +198,11 @@ const WhatWeDo = () => {
             {/* <video autoPlay loop muted>
               <source src={cashOffer} type="video/mp4" />
             </video> */}
-            <img className='max-md:hidden' src={rent} alt="hello" />
+            <img
+              className="max-md:hidden"
+              src={rent}
+              alt="house with sign that says rent"
+            />
             <p
               className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
@@ -231,7 +237,11 @@ const WhatWeDo = () => {
             {/* <video autoPlay loop muted>
               <source src={cashOffer} type="video/mp4" />
             </video> */}
-            <img className='max-md:hidden' src={moving} alt="hello" />
+            <img
+              className="max-md:hidden"
+              src={moving}
+              alt="hand-giving-money"
+            />
             <p
               className="text-container-description first-line:uppercase first-line:tracking-widest
   first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
