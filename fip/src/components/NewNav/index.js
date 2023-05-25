@@ -4,7 +4,7 @@ import logo from '../../assets/images/logo/FinalOakTree.png';
 
 const NewNav = () => {
   return (
-    <nav id="Nav" className="flex justify-start">
+    <nav id="Nav" className="flex">
       <ul className="flex flex-col nav-links">
         <img src={logo} alt="logo" />
         <Link
@@ -13,8 +13,8 @@ const NewNav = () => {
           duration={2000}
           className="nav-link hover:-translate-x-4"
         >
-          <li className="flex items-center justify-between">
-            <div className="nav-link-line"></div>
+          <li className="flex">
+            {/* <div className="nav-link-line"></div> */}
             <h1 className="ml-4 nav-link-text">Home</h1>
           </li>
         </Link>
@@ -25,7 +25,7 @@ const NewNav = () => {
           className="nav-link hover:-translate-x-4"
         >
           <li className="flex items-center justify-between">
-            <div className="nav-link-line"></div>
+            {/* <div className="nav-link-line"></div> */}
             <h1 className="ml-4 nav-link-text">About</h1>
           </li>
         </Link>
@@ -36,7 +36,7 @@ const NewNav = () => {
           className="nav-link hover:-translate-x-4"
         >
           <li className="flex items-center justify-between">
-            <div className="nav-link-line"></div>
+            {/* <div className="nav-link-line"></div> */}
             <h1 className="ml-4 nav-link-text">Team</h1>
           </li>
         </Link>
@@ -47,7 +47,7 @@ const NewNav = () => {
           className="nav-link hover:-translate-x-4"
         >
           <li className="flex items-center justify-between">
-            <div className="nav-link-line"></div>
+            {/* <div className="nav-link-line"></div> */}
             <h1 className="ml-4 nav-link-text">Contact</h1>
           </li>
         </Link>
