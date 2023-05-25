@@ -6,50 +6,51 @@ const NewNav = () => {
   return (
     <nav id="Nav" className="flex justify-start">
       <ul className="flex flex-col nav-links">
-        <li className="nav-link flex items-center justify-between hover:-translate-x-4">
-          <Link
-            to="Main"
-            smooth={true}
-            duration={2000}
-            className="nav-link-line"
-          ></Link>
-          <Link to="Main" smooth={true} duration={2000} className="ml-4">
-            HOME
-          </Link>
-        </li>
-        <li className="nav-link flex items-center justify-between hover:-translate-x-4">
-          <Link
-            to="WWD"
-            smooth={true}
-            duration={2000}
-            className="nav-link-line"
-          ></Link>
-          <Link to="WWD" smooth={true} duration={2000} className="ml-4">
-            ABOUT
-          </Link>
-        </li>
-        <li className="nav-link flex items-center justify-between hover:-translate-x-4">
-          <Link
-            to="Team"
-            smooth={true}
-            duration={2000}
-            className="nav-link-line"
-          ></Link>
-          <Link to="Team" smooth={true} duration={2000} className="ml-4">
-            TEAM
-          </Link>
-        </li>
-        <li className="nav-link flex items-center justify-between hover:-translate-x-4">
-          <Link
-            to="Contact"
-            smooth={true}
-            duration={2000}
-            className="nav-link-line"
-          ></Link>
-          <Link to="Contact" smooth={true} duration={2000} className="ml-4">
-            CONTACT
-          </Link>
-        </li>
+        <img src={logo} alt="logo" />
+        <Link
+          to="Main"
+          smooth={true}
+          duration={2000}
+          className="nav-link hover:-translate-x-4"
+        >
+          <li className="flex items-center justify-between">
+            <div className="nav-link-line"></div>
+            <h1 className="ml-4 nav-link-text">Home</h1>
+          </li>
+        </Link>
+        <Link
+          to="WWD"
+          smooth={true}
+          duration={2000}
+          className="nav-link hover:-translate-x-4"
+        >
+          <li className="flex items-center justify-between">
+            <div className="nav-link-line"></div>
+            <h1 className="ml-4 nav-link-text">About</h1>
+          </li>
+        </Link>
+        <Link
+          to="Team"
+          smooth={true}
+          duration={2000}
+          className="nav-link hover:-translate-x-4"
+        >
+          <li className="flex items-center justify-between">
+            <div className="nav-link-line"></div>
+            <h1 className="ml-4 nav-link-text">Team</h1>
+          </li>
+        </Link>
+        <Link
+          to="Contact"
+          smooth={true}
+          duration={2000}
+          className="nav-link hover:-translate-x-4"
+        >
+          <li className="flex items-center justify-between">
+            <div className="nav-link-line"></div>
+            <h1 className="ml-4 nav-link-text">Contact</h1>
+          </li>
+        </Link>
       </ul>
     </nav>
   );

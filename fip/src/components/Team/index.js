@@ -6,7 +6,7 @@ import Jen from '../../assets/images/other/RealJen.jpeg';
 import Jeremy from '../../assets/images/other/MunroAvatar2.svg';
 import Logan from '../../assets/images/other/RealLogan.jpeg';
 import Mike from '../../assets/images/other/MikeAvatar.svg';
-import Deena from '../../assets/images/other/DeenaAvatar.svg'
+import Deena from '../../assets/images/other/DeenaAvatar.svg';
 
 const Team = () => {
   return (
@@ -14,17 +14,7 @@ const Team = () => {
       <div className="team-header text-center">Meet The Team</div>
       <div className="team snap-x snap-mandatory overflow-scroll max-lg:flex grid gap-8 grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         <article class="snap-center team-member">
-          <img className='avatar' src={Mike} />
-          <div class="member-bio">
-            <h3 class="member-name">Mike McNeely</h3>
-            <h4 class="member-role">Owner / President</h4>
-            <br />
-            <h5>Contact:</h5>
-            <h4>mike@noble-oak.com</h4>
-          </div>
-        </article>
-        <article class="snap-center team-member">
-          <img className='avatar' src={Logan} />
+          <img className="avatar" src={Logan} alt="Logan McNeely" />
           <div class="member-bio">
             <h3 class="member-name">Logan McNeely</h3>
             <h4 class="member-role">Management / Sales</h4>
@@ -34,17 +24,7 @@ const Team = () => {
           </div>
         </article>
         <article class="snap-center team-member">
-          <img className='avatar' src={Jeremy} />
-          <div class="member-bio">
-            <h3 class="member-name">Jeremy Munro</h3>
-            <h4 class="member-role"> Acquisitions / Sales</h4>
-            <br />
-            <h5>Contact:</h5>
-            <h4>jeremy@noble-oak.com</h4>
-          </div>
-        </article>
-        <article class="snap-center team-member">
-          <img className='avatar' src={Jen} />
+          <img className="avatar" src={Jen} alt="Jennifer Travis" />
           <div class="member-bio">
             <h3 class="member-name">Jennifer Travis</h3>
             <h4 class="member-role">HR / Acquisitions</h4>
@@ -54,7 +34,7 @@ const Team = () => {
           </div>
         </article>
         <article class="snap-center team-member">
-          <img className='avatar' src={David} />
+          <img className="avatar" src={David} alt="David Dowell" />
           <div class="member-bio">
             <h3 class="member-name">David Dowell</h3>
             <h4 class="member-role">IT / Software Development</h4>
@@ -64,7 +44,27 @@ const Team = () => {
           </div>
         </article>
         <article class="snap-center team-member">
-          <img className='avatar' src={Deena} />
+          <img className="avatar" src={Mike} alt="Mike McNeely" />
+          <div class="member-bio">
+            <h3 class="member-name">Mike McNeely</h3>
+            <h4 class="member-role">Owner / President</h4>
+            <br />
+            <h5>Contact:</h5>
+            <h4>mike@noble-oak.com</h4>
+          </div>
+        </article>
+        <article class="snap-center team-member">
+          <img className="avatar" src={Jeremy} alt="Jeremy Munro" />
+          <div class="member-bio">
+            <h3 class="member-name">Jeremy Munro</h3>
+            <h4 class="member-role"> Acquisitions / Sales</h4>
+            <br />
+            <h5>Contact:</h5>
+            <h4>jeremy@noble-oak.com</h4>
+          </div>
+        </article>
+        <article class="snap-center team-member">
+          <img className="avatar" src={Deena} alt="Deena Mayberry" />
           <div class="member-bio">
             <h3 class="member-name">Deena Mayberry</h3>
             <h4 class="member-role">Office Manager</h4>
