@@ -16,7 +16,7 @@ const Team = () => {
         <article class="snap-center team-member">
           <img
             className="avatar"
-            src={Logan}
+            src="/static/media/RealLogan.032148c3b59ed4ade2eb.jpeg"
             alt="Logan McNeely - Management / Sales at Noble Oak Solutions"
           />
           <div class="member-bio">
@@ -30,7 +30,7 @@ const Team = () => {
         <article class="snap-center team-member">
           <img
             className="avatar"
-            src={Jen}
+            src="/static/media/RealJen.603a998969c6ff1ee462.jpeg"
             alt="Jennifer Travis - HR / Acquisitions at Noble Oak Solutions"
           />
           <div class="member-bio">
@@ -44,7 +44,7 @@ const Team = () => {
         <article class="snap-center team-member">
           <img
             className="avatar"
-            src={David}
+            src="/static/media/RealDave.76c7abab62552b1849d4.JPG"
             alt="David Dowell - IT / Software Development at Noble Oak Solutions"
           />
           <div class="member-bio">
