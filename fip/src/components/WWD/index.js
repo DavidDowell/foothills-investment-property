@@ -182,7 +182,7 @@ const WhatWeDo = () => {
         className="low-mid-house grayscale hover:grayscale-0"
         onClick={handleRentalPropertiesClick}
       >
-        <h2 className="text-3xl image-text">Rental Properties</h2>
+        <h2 className="text-3xl image-text">Consultations</h2>
       </div>
 
       {showRentalProperties && (
