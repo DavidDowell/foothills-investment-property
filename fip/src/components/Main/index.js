@@ -162,7 +162,7 @@ const Main = () => {
   };
 
   return (
-    <div
+    <main
       id="Main"
       className="main-image flex flex-col md:grid grid-rows-4 gap-6"
     >
@@ -264,7 +264,7 @@ const Main = () => {
           )}
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 
