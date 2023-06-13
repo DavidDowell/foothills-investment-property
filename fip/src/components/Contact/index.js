@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Link, animateScroll } from 'react-scroll';
+// import { Link, animateScroll } from 'react-scroll';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
