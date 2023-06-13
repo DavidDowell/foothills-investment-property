@@ -1,25 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e0ffcf8.css",
-    "main.js": "/static/js/main.3eb5393f.js",
+    "main.css": "/static/css/main.90b84e90.css",
+    "main.js": "/static/js/main.5460fd17.js",
     "static/js/787.dd1f9698.chunk.js": "/static/js/787.dd1f9698.chunk.js",
+    "static/media/04.png": "/static/media/04.aa296fa6689e8b31789b.png",
     "static/media/fotor_2023-4-11_20_34_8.png": "/static/media/fotor_2023-4-11_20_34_8.b1c24a3fe16e02ff7ee7.png",
+    "static/media/03.png": "/static/media/03.615487519e566d6389d7.png",
+    "static/media/00.png": "/static/media/00.8bef8a6c33fb6147de81.png",
+    "static/media/01.png": "/static/media/01.2de62a4e0cd2958e8273.png",
     "static/media/RealDave.JPG": "/static/media/RealDave.76c7abab62552b1849d4.JPG",
+    "static/media/02.png": "/static/media/02.2cc69cbb2c243ba92184.png",
     "static/media/RealJen.jpeg": "/static/media/RealJen.603a998969c6ff1ee462.jpeg",
     "static/media/newCottageImage.png": "/static/media/newCottageImage.1a5a75cd1dca2de729c1.png",
     "static/media/RealLogan.jpeg": "/static/media/RealLogan.032148c3b59ed4ade2eb.jpeg",
+    "static/media/house-for-rent.png": "/static/media/house-for-rent.f9a6e1e0bd78200c7971.png",
+    "static/media/moving.svg": "/static/media/moving.e1bb58e10108229ef38ec4b7c733237e.svg",
+    "static/media/cash-payment.mp4": "/static/media/cash-payment.5f5dca0b6da2930e6cad.mp4",
     "static/media/MikeAvatar.svg": "/static/media/MikeAvatar.16083fb68cabeee82500a9d471f03fc2.svg",
     "static/media/FinalOakTree.png": "/static/media/FinalOakTree.f8c121e9cfd4d9b3cddf.png",
     "static/media/MunroAvatar2.svg": "/static/media/MunroAvatar2.c04456eda5755c3603f7d4fbbc192df8.svg",
     "static/media/DeenaAvatar.svg": "/static/media/DeenaAvatar.58996573f282c4ad3fe9f70942f20a99.svg",
+    "static/media/financing.svg": "/static/media/financing.ec8a66086b2483ffa3efd1b88019b9a9.svg",
     "static/media/handshakesvg2.svg": "/static/media/handshakesvg2.aed587b0d9a94b6c4a027326985b582c.svg",
     "index.html": "/index.html",
-    "main.5e0ffcf8.css.map": "/static/css/main.5e0ffcf8.css.map",
-    "main.3eb5393f.js.map": "/static/js/main.3eb5393f.js.map",
+    "main.90b84e90.css.map": "/static/css/main.90b84e90.css.map",
+    "main.5460fd17.js.map": "/static/js/main.5460fd17.js.map",
     "787.dd1f9698.chunk.js.map": "/static/js/787.dd1f9698.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e0ffcf8.css",
-    "static/js/main.3eb5393f.js"
+    "static/css/main.90b84e90.css",
+    "static/js/main.5460fd17.js"
   ]
 }
