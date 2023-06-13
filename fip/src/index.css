@@ -753,3 +753,11 @@ nav {
   width: 200px;
 }
 }
+
+.check {
+  background-image: url(./assets/images/other/star-symbol-icon.png);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: left center;
+  padding-left: 40px;
+}

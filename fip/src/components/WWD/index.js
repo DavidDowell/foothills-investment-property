@@ -92,16 +92,6 @@ const WhatWeDo = () => {
               alt="handshake"
               className="max-md:hidden"
             />
-            <h1
-              className="text-container-description first-line:uppercase first-line:tracking-widest
-  first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-lg lg:text-3xl text-left row-start-1 row-span-1 m-10 grow whitespace-normal"
-            >
-              Battling foreclosure?
-            </h1>
-            <h1 className="text-lg lg:text-3xl m-2 whitespace-normal text-rose-500">
-              Inherit a property that requires too much up-keep?
-            </h1>
             <h1 className="text-center mission text-lg lg:text-3xl m-8 whitespace-normal">
               Noble Oak Solutions provides services to homeowners struggling
               with costly properties. Consultations are free and we provide many
@@ -130,17 +120,9 @@ const WhatWeDo = () => {
             </video>
             {/* <img src={handGiving} alt="hello" /> */}
             <p
-              className="text-container-description first-line:uppercase first-line:tracking-widest
-  first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
+              className="text-container-description mission text-2xl md:text-3xl row-start-2 row-span-2 m-10 grow whitespace-normal text-center"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
-              risus at ultrices mi tempus imperdiet nulla malesuada
-              pellentesque. Nibh nisl condimentum id venenatis a condimentum
-              vitae sapien pellentesque. Morbi leo urna molestie at. Enim diam
-              vulputate ut pharetra sit. Ipsum dolor sit amet consectetur
-              adipiscing.
+              Need a cash offer for your house or an inherited property? <br></br>We evaluate properties and provide offers fast!
             </p>
           </div>
         </div>
@@ -149,14 +131,14 @@ const WhatWeDo = () => {
         className="mid-house grayscale hover:grayscale-0"
         onClick={handleFinancingOptionsClick}
       >
-        <h2 className="text-3xl image-text">Financing Options</h2>
+        <h2 className="text-3xl image-text">Finance Options</h2>
       </div>
 
       {showFinancingOptions && (
         <div className="text-container financing-container">
           <div className="flex justify-center">
             <header className="max-md:hidden text-2xl lg:text-4xl flex text-container-header pb-2 my-4">
-              Financing As Low As $1/mo For Eternity!
+              Financing
             </header>
           </div>
           <div className="flex flex-wrap justify-center items-center">
@@ -165,17 +147,11 @@ const WhatWeDo = () => {
             </video> */}
             <img className="max-md:hidden" src={financing} alt="financing" />
             <p
-              className="text-container-description first-line:uppercase first-line:tracking-widest
-  first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
+              className="text-container-description text-center mission text-2xl md:text-3xl row-start-2 row-span-2 m-10 grow whitespace-normal"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
-              risus at ultrices mi tempus imperdiet nulla malesuada
-              pellentesque. Nibh nisl condimentum id venenatis a condimentum
-              vitae sapien pellentesque. Morbi leo urna molestie at. Enim diam
-              vulputate ut pharetra sit. Ipsum dolor sit amet consectetur
-              adipiscing.
+              Need to get full market value for your home?
+              <br></br>
+              Noble Oak Solutions can come up to your price with flexible financing.
             </p>
           </div>
         </div>
@@ -191,7 +167,7 @@ const WhatWeDo = () => {
         <div className="text-container rental-container">
           <div className="flex justify-center">
             <header className="max-md:hidden text-2xl lg:text-4xl flex text-container-header pb-2 my-4">
-              Rental Properties As Big As 4 sq ft.
+              Need Help Getting Back on Your Feet?
             </header>
           </div>
           <div className="flex flex-wrap justify-center items-center">
@@ -203,19 +179,12 @@ const WhatWeDo = () => {
               src={rent}
               alt="house with sign that says rent"
             />
-            <p
-              className="text-container-description first-line:uppercase first-line:tracking-widest
-  first-letter:text-7xl first-letter:font-bold first-letter:text-cyan-500
-  first-letter:mr-3 first-letter:float-left mission text-2xl md:text-3xl text-left row-start-2 row-span-2 m-10 grow whitespace-normal"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
-              risus at ultrices mi tempus imperdiet nulla malesuada
-              pellentesque. Nibh nisl condimentum id venenatis a condimentum
-              vitae sapien pellentesque. Morbi leo urna molestie at. Enim diam
-              vulputate ut pharetra sit. Ipsum dolor sit amet consectetur
-              adipiscing.
-            </p>
+            <ul className='text-3xl'>
+                <li className='check'>Navigating Foreclosure</li>
+                <li className='check'>Inheriting an unwanted property</li>
+                <li className='check'>Repairing your home to sell</li>
+                <li className='check'>Needing cash quickly</li>
+            </ul>
           </div>
         </div>
       )}
