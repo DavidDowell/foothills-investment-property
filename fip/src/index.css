@@ -215,6 +215,13 @@ nav {
     /* justify-content: space-around; */
 }
 
+@media screen and (max-width: 510px) {
+  .team {
+    width: 100%;
+  }
+}
+
+
 .team-member {
     margin: 20px;
     background: white;
@@ -269,6 +276,8 @@ nav {
   margin-bottom: 10vh;
   padding: 0 150px;
 }
+
+
 
 .contact {
   height: 100%;
@@ -760,4 +769,10 @@ nav {
   background-size: 25px 25px;
   background-position: left center;
   padding-left: 40px;
+}
+
+@media screen and (max-width: 650px) {
+  #Contact {
+    padding: 0px 0px 0px 0px;
+  }
 }
