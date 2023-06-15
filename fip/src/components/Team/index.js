@@ -16,7 +16,7 @@ const Team = () => {
         <article class="snap-center team-member">
           <img
             className="avatar"
-            src="/static/media/RealLogan.032148c3b59ed4ade2eb.jpeg"
+            src={ Logan }
             alt="Logan McNeely - Management / Sales at Noble Oak Solutions"
           />
           <div class="member-bio">
@@ -30,7 +30,7 @@ const Team = () => {
         <article class="snap-center team-member">
           <img
             className="avatar"
-            src="/static/media/RealJen.603a998969c6ff1ee462.jpeg"
+            src={ Jen }
             alt="Jennifer Travis - HR / Acquisitions at Noble Oak Solutions"
           />
           <div class="member-bio">
@@ -44,7 +44,7 @@ const Team = () => {
         <article class="snap-center team-member">
           <img
             className="avatar"
-            src="/static/media/RealDave.76c7abab62552b1849d4.JPG"
+            src={ David }
             alt="David Dowell - IT / Software Development at Noble Oak Solutions"
           />
           <div class="member-bio">
@@ -58,7 +58,7 @@ const Team = () => {
         <article class="snap-center team-member">
           <img
             className="avatar"
-            src={Mike}
+            src={ Mike }
             alt="Mike McNeely - Owner / President at Noble Oak Solutions"
           />
           <div class="member-bio">
@@ -72,7 +72,7 @@ const Team = () => {
         <article class="snap-center team-member">
           <img
             className="avatar"
-            src={Jeremy}
+            src={ Jeremy }
             alt="Jeremy Munro - Acquisitions / Sales at Noble Oak Solutions"
           />
           <div class="member-bio">
@@ -86,7 +86,7 @@ const Team = () => {
         <article class="snap-center team-member">
           <img
             className="avatar"
-            src={Deena}
+            src={ Deena }
             alt="Deena Mayberry - Office Manager at Noble Oak Solutions"
           />
           <div class="member-bio">
