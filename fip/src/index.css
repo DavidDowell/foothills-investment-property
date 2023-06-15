@@ -229,7 +229,6 @@ nav {
     flex: 1;
     min-width: 300px;
     max-width: 500px;
-    max-height: 745px;
     border: 24px solid white;
     border-radius: 12px;
     transition: box-shadow 0.3s ease-in-out;
@@ -368,7 +367,7 @@ nav {
 
 .avatar {
   max-height: 520px;
-  min-height: fit-content;
+  /* min-height: fit-content; */
 }
 
 .contact-form button {
